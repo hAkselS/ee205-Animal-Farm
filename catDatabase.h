@@ -17,7 +17,7 @@
 #define MAX_CATS 1024
 
 //global variables
-extern int     numCats;
+extern NumCats     numCats;
 
 //declare enums
 enum           Gender {UNKNOWN_GENDER = 0, FEMALE =1 , MALE = 2 };

@@ -19,7 +19,7 @@
 //instantiation of Cats struct
 struct Cats cats[ MAX_CATS ];
 
-int numCats = 0;
+NumCats numCats = 0;
 
 //validation functions
 bool validateName ( const char inputCatName[] ){
