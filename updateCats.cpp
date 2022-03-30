@@ -37,7 +37,7 @@ bool fixCat ( const int currentCat ){
     return true;
 }
 
-bool updateWeight ( const int currentCat, const float newWeight ){
+bool updateWeight ( const int currentCat, const Weight newWeight ){
     if ( validateWeight ( newWeight ) == false ){
         return false ;
     }
