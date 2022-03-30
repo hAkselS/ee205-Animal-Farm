@@ -11,7 +11,7 @@
 #pragma once
 #include <stdio.h>
 #include <stdbool.h>
-
+#include "config.h"
 
 #define MAX_NAME_LEN 50
 #define MAX_CATS 1024
@@ -25,13 +25,14 @@ enum           Breed  {UNKNOWN_BREED, MAINE_COON, MANX, SHORTHAIR, PERSIAN, SPHY
 enum           Color  {BLACK, WHITE, RED, BLUE, GREEN, PINK};
 
 
+
 //create a struct
 struct Cats {
     char                 name[MAX_NAME_LEN];
     enum Gender          gender;
     enum Breed           breed;
     bool                 isFixed;
-    float                weight;
+    Weight                weight;
     enum Color           collarColor1;
     enum Color           collarColor2;
     unsigned long long   license;

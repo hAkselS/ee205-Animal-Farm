@@ -15,7 +15,7 @@ extern bool updateCatName ( const int currentCat, const char newCatName[] );
 
 extern bool fixCat ( const int currentCat );
 
-extern bool updateWeight ( const int currentCat, const float newWeight );
+extern bool updateWeight ( const int currentCat, const Weight newWeight );
 
 extern bool updateCollarColor1 ( const int currentCat, enum Color newCollarColor1 );
 
