@@ -29,9 +29,7 @@ bool addCat (  const char catName[],
                const enum Color catCollarColor2,
                const unsigned long long catLicense ){
 
-#ifdef DEBUG2
-    printf("numCats = [%i]\n", numCats);
-#endif
+
 
     if (  validateName( catName ) == false ) {
         return false;
@@ -44,30 +42,19 @@ bool addCat (  const char catName[],
     }
 
     strcpy( cats[ numCats ].name , catName );
-#ifdef DEBUG
-    // printf( "the first letter is %c\n" , nameArray[ numCats ][ 0 ] );
-  // printf( "the next letter is %c\n" , nameArray[ numCats ][ 1 ] );
-#endif
+
 
     cats[ numCats ].gender = catGender;
-#ifdef DEBUG
-    printf( "The gender is [%i]\n", cats[ numCats ].gender );
-#endif
+
 
     cats[ numCats ].breed = catBreed;
-#ifdef DEBUG
-    printf( "The breed is [%i]\n", cats[ numCats ].breed );
-#endif
+
 
     cats[ numCats ].isFixed = catIsFixed;
-#ifdef DEBUG
-    printf( "isFixed = [%i] (0 is false)\n", cats[ numCats ].isFixed );
-#endif
+
 
     cats[ numCats ].weight = catWeight;
-#ifdef DEBUG
-    printf( "cat weight = [%.2f]\n" , cats[ numCats ].weight);
-#endif
+
 
     cats[ numCats ].collarColor1 = catCollarColor1;
 
