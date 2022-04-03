@@ -8,8 +8,11 @@
 /// @author  Aksel Sloan <@aksel@hawaii.edu>
 /// @date   02_Apr_2022
 ///////////////////////////////////////////////////////////////////////////////
-#include <iostream>
 #include <cstring>
+#include <stdexcept>
+#include <iostream>
+#include <iomanip>
+#include <cassert>
 #include "Cat.h"
 #include "config.h"
 
@@ -25,23 +28,27 @@ bool Cat::zeroMemberVars() {
     return true;
 }
 
-//CONSTRUCTORS
+///CONSTRUCTORS
 Cat::Cat() {
     zeroMemberVars();
 }
 
 Cat::Cat(const char *newName, const Gender newGender, const Breed newBreed, const Weight newWeight) {
+    setName( newName ) ;
+    setGender( newGender ) ;
+    setBreed( newBreed ) ;
+    setWeight( newWeight ) ;
 
-
+    assert( validateCat() ) ;
 }
 
-//DESTRUCTORS
+///DESTRUCTORS
 Cat::~Cat() {
     zeroMemberVars();
 }
 
 
-//SETTERS
+///SETTERS
 void Cat::setName(const char *newName) {
     validateName( newName );                    //validate new name
 
@@ -51,7 +58,7 @@ void Cat::setName(const char *newName) {
 }
 
 void Cat::setGender( const enum Gender newGender ) {
-    Cat::catGender = newGender;
+    Cat::catGender = newGender;  //why use Cat:: in this line if were already in a cat function???
 }
 
 void Cat::setBreed( const enum Breed newBreed ) {
@@ -67,7 +74,7 @@ void Cat::setWeight( const Weight newWeight ){
     Cat::catWeight = newWeight;
 }
 
-//GETTERS
+///GETTERS
 const char *Cat::getName() const noexcept {
     return catName;
 }
@@ -88,7 +95,7 @@ Weight Cat::getWeight() const noexcept {
     return 0;
 }
 
-//VALIDATION
+///VALIDATION
 bool Cat::validateName(const char *newName) {
     if ( newName == nullptr ){      //check for empty name
         cout << PROGRAM_NAME << "Cat name cannot equal null" << endl;
@@ -113,7 +120,39 @@ bool Cat::validateWeight(const Weight newWeight) {
     return true;
 }
 
+
+
 //what the point of validating the enums???
+
+//PUBLIC METHODS
+bool Cat::validateCat() const noexcept {
+    validateName( catName ) ;
+    validateWeight( catWeight ) ;
+    //missing breed and gender right now
+    return true;
+}
+
+/// Format a line for printing the members of a class
+#define FORMAT_LINE( className, member ) cout << setw(8) << (className) << setw(20) << (member) << setw(52)
+/// @returns true if everything worked correctly.  false if something goes
+///          wrong
+bool Cat::printCat() const noexcept {
+    assert( validateCat() ) ;
+
+    cout << setw(80) << setfill( '=' ) << "" << endl ;
+    cout << setfill( ' ' ) ;
+    cout << left ;
+    cout << boolalpha ;
+    FORMAT_LINE( "Cat", "name" )         << getName()   << endl ;
+    FORMAT_LINE( "Cat", "gender" )       << getGender() << endl ; //@TODO include string converters
+    FORMAT_LINE( "Cat", "breed" )        <<  getBreed()    << endl ;
+    FORMAT_LINE( "Cat", "isFixed" )      << isFixed()   << endl ;
+    FORMAT_LINE( "Cat", "weight" )       << getWeight() << endl ;
+
+    return true ;
+}
+
+
 
 
 

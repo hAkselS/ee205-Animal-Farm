@@ -50,8 +50,11 @@ public:             //GETTERS
     Weight getWeight() const noexcept;
 
 
-public:             //METHODS
+public:             //STATIC PUBLIC METHODS
     static bool validateName        ( const char* newName );   //validate input cat name
     static bool validateWeight      ( const Weight newWeight );
     //omit validating enums for now
+public:             //PUBLIC METHODS
+    bool validateCat() const noexcept;
+    bool printCat() const noexcept;
 };

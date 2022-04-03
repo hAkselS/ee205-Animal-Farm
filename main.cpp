@@ -26,14 +26,26 @@
 #include "reportCats.h"
 #include "updateCats.h"
 #include "deleteCats.h"
+#include "Cat.h"
 
 //#define DEBUG
 #define TEST
 using namespace std;
 int main(){
     cout << "Starting Animal Farm 1" << endl;
-    //ADD CATS
-/*
+
+//creat two test cats
+    Cat testCatOne = Cat();
+    testCatOne.printCat();
+
+    Cat testCatTwo = Cat( "chilibean", MALE, SPHYNX, 7.7 );
+    testCatTwo.fixCat();
+    testCatTwo.printCat();
+
+
+
+
+    /*
 
 
 #ifdef TEST
