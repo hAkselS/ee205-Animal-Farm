@@ -42,7 +42,12 @@ public:             //SETTERS
     void fixCat ( );
     void setWeight( const Weight newWeight );
 
-
+public:             //GETTERS
+    const char* getName() const noexcept;  //what does const noexpect do???
+    Gender getGender() const noexcept;     //why can I leave off enum here??
+    Breed getBreed() const noexcept;
+    bool isFixed() const noexcept;
+    Weight getWeight() const noexcept;
 
 
 public:             //METHODS

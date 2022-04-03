@@ -67,6 +67,27 @@ void Cat::setWeight( const Weight newWeight ){
     Cat::catWeight = newWeight;
 }
 
+//GETTERS
+const char *Cat::getName() const noexcept {
+    return catName;
+}
+
+Gender Cat::getGender() const noexcept {
+    return catGender;
+}
+
+Breed Cat::getBreed() const noexcept {
+    return catBreed;
+}
+
+bool Cat::isFixed() const noexcept {
+    return catIsFixed;
+}
+
+Weight Cat::getWeight() const noexcept {
+    return 0;
+}
+
 //VALIDATION
 bool Cat::validateName(const char *newName) {
     if ( newName == nullptr ){      //check for empty name
@@ -91,6 +112,7 @@ bool Cat::validateWeight(const Weight newWeight) {
     }
     return true;
 }
+
 //what the point of validating the enums???
 
 
