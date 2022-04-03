@@ -16,6 +16,7 @@
 #include "catDatabase.h"
 #include "deleteCats.h"
 #include "config.h"
+/*
 
 
 
@@ -37,3 +38,4 @@ void deleteAllCats ( ){
     printf("now the number of cats is [%i]\n", numCats);
 }
 
+*/

@@ -14,6 +14,7 @@
 #include "catDatabase.h"
 #include "reportCats.h"
 #include "config.h"
+/*
 
 void printCat ( const int currentCat ){
     if ( currentCat < 0 || currentCat >= MAX_CATS ){
@@ -55,6 +56,7 @@ int findCat ( const char catName [] ){
     fprintf( stderr, "%s: error 425, this cat does not exist!\n", PROGRAM_NAME );
     return 0;
 }
+*/
 
 
 

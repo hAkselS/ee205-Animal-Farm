@@ -14,6 +14,7 @@
 #include "config.h"
 
 //#define DEBUG
+/*
 
 
 //instantiation of Cats struct
@@ -169,5 +170,6 @@ const char* colorString ( const enum Color collarColor ){
 void validateMe( ){
     printf( "you're doing great, hunny\n" );
 }
+*/
 
 

@@ -15,6 +15,7 @@
 #include "catDatabase.h"
 #include "updateCats.h"
 #include "config.h"
+/*
 
 
 bool updateCatName ( const int currentCat, const char newCatName[] ){
@@ -59,3 +60,4 @@ bool updateLicense ( const int currentCat, const unsigned long long newLicense )
     cats[ currentCat ].license = newLicense;
     return true;
 }
+*/

@@ -18,6 +18,7 @@
 
 //#define DEBUG
 //#define DEBUG2
+/*
 
 
 bool addCat (  const char catName[],
@@ -69,3 +70,4 @@ bool addCat (  const char catName[],
 }
 
 
+*/

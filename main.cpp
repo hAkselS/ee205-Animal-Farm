@@ -20,10 +20,7 @@
 /// @date   16  February 2022
 /////////////////////////////////////////////////////////////////////////////
 
-#include <stdio.h>
-#include <stdbool.h>
-#include <string.h>
-#include <assert.h>
+#include <iostream>
 #include "catDatabase.h"
 #include "addCats.h"
 #include "reportCats.h"
@@ -32,13 +29,12 @@
 
 //#define DEBUG
 #define TEST
-
+using namespace std;
 int main(){
-    printf("Starting Animal Farm 1\n");
+    cout << "Starting Animal Farm 1" << endl;
     //ADD CATS
-#ifdef DEBUG
-    printf( "number of cats numCat = [%i]\n", numCats);
-#endif
+/*
+
 
 #ifdef TEST
     printf("Adding cats\n");
@@ -117,7 +113,8 @@ int main(){
     deleteAllCats ();
     printAllCats ();
 #endif
+*/
 
-    printf("Finished with Animal Farm 1\n");
+    cout << "Finished with Animal Farm 1" << endl;
 
 }
