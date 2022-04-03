@@ -13,16 +13,12 @@
 #include <stdbool.h>
 #include "config.h"
 
-#define MAX_NAME_LEN 50
-#define MAX_CATS 1024
+
 
 //global variables
 extern NumCats     numCats;
 
-//declare enums
-enum           Gender {UNKNOWN_GENDER = 0, FEMALE =1 , MALE = 2 };
-enum           Breed  {UNKNOWN_BREED, MAINE_COON, MANX, SHORTHAIR, PERSIAN, SPHYNX};
-enum           Color  {BLACK, WHITE, RED, BLUE, GREEN, PINK};
+
 
 
 

@@ -102,7 +102,7 @@ bool validateCat (   const char inputCatName[],
 }
 
 void initializeCats(){} //finish me
-
+*/
 //enum to string converters
 const char* genderString ( const enum Gender catGender ){
     switch ( catGender ){
@@ -170,6 +170,6 @@ const char* colorString ( const enum Color collarColor ){
 void validateMe( ){
     printf( "you're doing great, hunny\n" );
 }
-*/
+
 
 
