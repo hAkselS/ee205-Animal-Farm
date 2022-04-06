@@ -5,7 +5,7 @@
 /// Usage: This C file will define a function that can store cat data.
 ///   catData base will hold difference aspects of each cat such as
 ///   the cats weight, gender name and color
-/// Intput: when calling this function:
+/// Input: when calling this function:
 //    catDatabase ( char array, enum , enum , bool , float )
 ///
 ///
@@ -21,6 +21,8 @@
 /////////////////////////////////////////////////////////////////////////////
 
 #include <iostream>
+#include <cassert>
+#include <cstring>
 #include "catDatabase.h"
 #include "addCats.h"
 #include "reportCats.h"
@@ -28,21 +30,50 @@
 #include "deleteCats.h"
 #include "Cat.h"
 
-//#define DEBUG
-#define TEST
+#define DEBUG
+
 using namespace std;
 int main(){
     cout << "Starting Animal Farm 1" << endl;
 
-//creat two test cats
+#ifdef DEBUG
+
+    //check that default values are working
     Cat testCatOne = Cat();
+    assert(testCatOne.getName() != nullptr );   //name doesn't point to null
+    assert(strcmp(testCatOne.getName(), "") == 0); //name is empty
+    assert(testCatOne.getGender() == UNKNOWN_GENDER);
+    assert(testCatOne.getBreed() == UNKNOWN_BREED);
+    assert(testCatOne.isFixed() == false);
+    assert(testCatOne.getWeight() == UNKNOWN_WEIGHT);
+    assert(!testCatOne.isFixed());
+    assert(!testCatOne.validateCat());  // The default cat is invalid
+
     testCatOne.printCat();
+
 
     Cat testCatTwo = Cat( "chilibean", MALE, SPHYNX, 7.7 );
     testCatTwo.fixCat();
     testCatTwo.printCat();
 
+    Cat testCatThree = Cat( "kale", FEMALE, SHORTHAIR, 4.2);
+    testCatThree.printCat();
+    Cat testCatFour = Cat( "bobLeSponge", MALE, PERSIAN, 4.9);
+    testCatFour.printCat();
+    Cat testCatFive = Cat( "kennedy", MALE, SHORTHAIR, 5.2);
+    testCatFive.printCat();
+    Cat testCatSix = Cat( "gary", MALE, MAINE_COON, 6.9);
+    testCatSix.printCat();
+    Cat testCatSeven = Cat( "missNo", UNKNOWN_GENDER, UNKNOWN_BREED, -8.8); //MANX
+    testCatSeven.printCat();
+    testCatSeven.validateCat();
 
+
+
+
+
+
+#endif
 
 
     /*

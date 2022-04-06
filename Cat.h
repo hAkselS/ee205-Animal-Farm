@@ -53,6 +53,8 @@ public:             //GETTERS
 public:             //STATIC PUBLIC METHODS
     static bool validateName        ( const char* newName );   //validate input cat name
     static bool validateWeight      ( const Weight newWeight );
+    static bool validateGender      ( const enum Gender newGender );
+    static bool validateBreed       ( const enum Breed newBreed );
     //omit validating enums for now
 public:             //PUBLIC METHODS
     bool validateCat() const noexcept;

@@ -19,7 +19,7 @@ typedef int NumCats;
 #define MAX_CATS 1024
 #define UNKNOWN_WEIGHT -1
 
-#define PROGRAM_NAME "Animal Farm 1"
+#define PROGRAM_NAME "Animal Farm 2"
 
 //enums
 //declare enums

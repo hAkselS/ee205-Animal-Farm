@@ -15,6 +15,7 @@
 #include <cassert>
 #include "Cat.h"
 #include "config.h"
+#include "catDatabase.h"
 
 using namespace std;
 
@@ -92,44 +93,74 @@ bool Cat::isFixed() const noexcept {
 }
 
 Weight Cat::getWeight() const noexcept {
-    return 0;
+    return catWeight;
 }
 
 ///VALIDATION
 bool Cat::validateName(const char *newName) {
     if ( newName == nullptr ){      //check for empty name
-        cout << PROGRAM_NAME << "Cat name cannot equal null" << endl;
+        cout << PROGRAM_NAME << ": Cat name cannot equal null" << endl;
         return false;
     }
     if ( strlen( newName ) <= 0 ){
-        cout << PROGRAM_NAME << "Cat name must be more than 0 characters" << endl;
+        cout << PROGRAM_NAME << ": Cat name must be more than 0 characters" << endl;
         return false;
     }
     if( strlen( newName ) >= MAX_NAME_LEN) {
-        cout << PROGRAM_NAME << "Cat name cannot be longer than max name length" << endl;
+        cout << PROGRAM_NAME << ": Cat name cannot be longer than max name length" << endl;
         return false;
     }
-    return true;
+
+    else
+            return true;
 }
 
 bool Cat::validateWeight(const Weight newWeight) {
     if ( newWeight <= 0 ){
-        cout << PROGRAM_NAME << "Cats must have weight greater than 0" << endl;
+        cout << PROGRAM_NAME << ": Cats must have weight greater than 0" << endl;
         return false;
     }
-    return true;
+    else
+        return true;
 }
 
+bool Cat::validateGender( const enum Gender newGender ) {
+    if ( newGender == UNKNOWN_GENDER ){
+        cout << PROGRAM_NAME << ": Gender must be known" << endl;
+        return false;
+    }
+    else
+        return true;
+}
 
+bool Cat::validateBreed( const enum Breed newBreed) {
+    if ( newBreed == UNKNOWN_BREED) {
+        cout << PROGRAM_NAME << ": Gender must be known" << endl;
+        return false;
+    }
+    else
+        return true;
+}
 
 //what the point of validating the enums???
 
 //PUBLIC METHODS
 bool Cat::validateCat() const noexcept {
-    validateName( catName ) ;
-    validateWeight( catWeight ) ;
-    //missing breed and gender right now
-    return true;
+    if (validateName(catName)){
+        return true;
+    }
+    if (validateWeight(catWeight)){
+        return true;
+    }
+    if (validateGender(catGender)){
+        return true;
+    }
+    if (validateBreed(catBreed)) {
+        return true;
+    }
+    else
+        //cout << PROGRAM_NAME << getName() <<  ": bad cat!" << endl;  //how to I get this to print the name of the bad cat???
+        return false;
 }
 
 /// Format a line for printing the members of a class
@@ -137,17 +168,16 @@ bool Cat::validateCat() const noexcept {
 /// @returns true if everything worked correctly.  false if something goes
 ///          wrong
 bool Cat::printCat() const noexcept {
-    assert( validateCat() ) ;
-
+    //assert( validateCat()) ;  //this is where animal must have weight greater than... is coming from
     cout << setw(80) << setfill( '=' ) << "" << endl ;
     cout << setfill( ' ' ) ;
     cout << left ;
     cout << boolalpha ;
-    FORMAT_LINE( "Cat", "name" )         << getName()   << endl ;
-    FORMAT_LINE( "Cat", "gender" )       << getGender() << endl ; //@TODO include string converters
-    FORMAT_LINE( "Cat", "breed" )        <<  getBreed()    << endl ;
-    FORMAT_LINE( "Cat", "isFixed" )      << isFixed()   << endl ;
-    FORMAT_LINE( "Cat", "weight" )       << getWeight() << endl ;
+    FORMAT_LINE( "Cat", "name" )         << getName()       << endl ;
+    FORMAT_LINE( "Cat", "gender" )       << genderString(getGender())     << endl ; //@TODO include string converters
+    FORMAT_LINE( "Cat", "breed" )        << breedString(getBreed())     << endl ;
+    FORMAT_LINE( "Cat", "isFixed" )      << isFixed()       << endl ;
+    FORMAT_LINE( "Cat", "weight" )       << getWeight()     << endl ;
 
     return true ;
 }
