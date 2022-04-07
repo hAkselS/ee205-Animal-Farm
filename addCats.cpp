@@ -23,15 +23,21 @@ using namespace std;
 
 bool addCat ( Cat* newCat){
     assert ( newCat != nullptr );
-    newCat -> validateCat();
+    if( newCat -> validateCat()) {
+        newCat -> next = catabaseHeadPtr;
+        catabaseHeadPtr = newCat;
+        numCats ++;
+        #ifdef DEBUG
+                cout << PROGRAM_NAME << ": Added cat [" << newCat -> getName() << "]" << endl;
+        #endif
+    }
     //mark checks if cat is in database already ///@TODO validate database
-    newCat -> next = catabaseHeadPtr;
-    catabaseHeadPtr = newCat;
-    numCats ++;
+   else{
+        cout << PROGRAM_NAME << ": bad cat! [" << newCat -> getName() << "] not added" << endl;
+   }
 
-    #ifdef DEBUG
-        cout << PROGRAM_NAME << ": Added cat [" << newCat -> getName() << "]" << endl;
-    #endif
+
+
 
     return true;
 }

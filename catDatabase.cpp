@@ -15,6 +15,8 @@
 #include "config.h"
 #include "Cat.h"
 
+#define DEBUG
+
 using namespace std;
 Cat* catabaseHeadPtr = nullptr;
 NumCats numCats = 0;
@@ -31,7 +33,9 @@ extern bool validateDatabase (){
 
         validCats ++;
     }
+    #ifdef DEBUG
     cout << PROGRAM_NAME << ": there are [" << validCats << "] valid cats" << endl;
+    #endif
     return true;
 }
 //#define DEBUG

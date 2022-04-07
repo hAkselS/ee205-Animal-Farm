@@ -6,7 +6,7 @@
 ///   catData base will hold difference aspects of each cat such as
 ///   the cats weight, gender name and color
 /// Input: when calling this function:
-//    catDatabase ( char array, enum , enum , bool , float )
+///    catDatabase ( char array, enum , enum , bool , float )
 ///
 ///
 ///
@@ -79,7 +79,12 @@ int main(){
     printDatabase();
     validateDatabase();
 
+#ifdef DEBUG
+    addCat( new Cat( "dirtydan", UNKNOWN_GENDER, UNKNOWN_BREED, -1) );
+#endif
 
+    validateDatabase();
+    printDatabase();
 
     /*
 
