@@ -25,21 +25,6 @@ extern bool validateDatabase ();
 
 
 
-
-//allow other codes to access instance of Cats structure, cats
-
-//extern struct Cats   cats[];
-
-
-//functions declared in catDatabase.c
-//validation functions
-//extern bool validateCat       (  const char inputCatName[],
-//                                 const float inputCatWeight );
-//extern bool validateName      (  const char inputCatName[] );
-//extern bool validateWeight    (  const float inputCatWeight );
-//extern bool validateIndex     (  const int currentCat );
-//extern bool validateNumCats   ( );
-
 //enum to string functions
 extern const char* genderString ( const enum Gender catGender );
 extern const char* breedString ( const enum Breed catBreed );
