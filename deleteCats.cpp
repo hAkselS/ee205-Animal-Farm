@@ -8,34 +8,29 @@
 /// @author  Aksel Sloan <@aksel@hawaii.edu>
 /// @date   20_Mar_2022
 ///////////////////////////////////////////////////////////////////////////////
+#include <cassert>
+#include <iostream>
+#include <stdexcept>
 
-#include <stdio.h>
-#include <stdbool.h>
-#include <string.h>
-
-#include "catDatabase.h"
-#include "deleteCats.h"
 #include "config.h"
-/*
+#include "deleteCats.h"
+#include "catDatabase.h"
+#include "Cat.h"
 
+using namespace std ;
 
-
-
-void deleteAllCats ( ){
-
-    for ( int currentCat = 0; currentCat <= numCats; currentCat++){
-        memset ( cats[ currentCat ].name, 0, MAX_NAME_LEN );
-        cats[ currentCat ].gender = UNKNOWN_GENDER;
-        cats[ currentCat ].breed = UNKNOWN_BREED;
-        cats[ currentCat ].isFixed = 0;
-        cats[ currentCat ].weight =0;
-        cats[ currentCat ].collarColor1 = BLACK;
-        cats[ currentCat ].collarColor2 = BLACK;
-        cats[ currentCat ].license = 0;
+bool deleteCat ( Cat* doomedCat ){
+    assert( doomedCat != nullptr);
+    ///validate database???
+    //if we want to delete the first cat
+    if ( doomedCat == catabaseHeadPtr ){
+        catabaseHeadPtr = catabaseHeadPtr -> next;
+        delete doomedCat;
+        numCats --;
+        assert(validateDatabase());
+        return true;
     }
 
-    numCats = 0;
-    printf("now the number of cats is [%i]\n", numCats);
 }
 
-*/
+

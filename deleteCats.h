@@ -9,7 +9,10 @@
 /// @date   20_Mar_2022
 ///////////////////////////////////////////////////////////////////////////////
 #pragma once
+#include <iostream>
+#include "Cat.h"
 
+extern bool deleteCat ( Cat* doomedCat );
 extern void deleteAllCats ( );
 
 

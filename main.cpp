@@ -86,6 +86,10 @@ int main(){
     validateDatabase();
     printDatabase();
 
+    //delete the first cat
+    deleteCat( catabaseHeadPtr );
+    printDatabase();
+
 
     printf("  /\\_/\\  (\n");
     printf(" ( ^.^ ) _)\n");
