@@ -12,7 +12,10 @@
 #include <string.h>
 #include "catDatabase.h"
 #include "config.h"
+#include "Cat.h"
 
+Cat* catabaseHeadPtr = nullptr;
+NumCats numCats = 0;
 //#define DEBUG
 /*
 

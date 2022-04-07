@@ -48,7 +48,7 @@ int main(){
     assert(testCatOne.getWeight() == UNKNOWN_WEIGHT);
     assert(!testCatOne.isFixed());
     assert(!testCatOne.validateCat());  // The default cat is invalid
-
+    testCatOne.validateCat();
     testCatOne.printCat();
 
 
@@ -64,16 +64,16 @@ int main(){
     testCatFive.printCat();
     Cat testCatSix = Cat( "gary", MALE, MAINE_COON, 6.9);
     testCatSix.printCat();
-    Cat testCatSeven = Cat( "missNo", UNKNOWN_GENDER, UNKNOWN_BREED, -8.8); //MANX
+    Cat testCatSeven = Cat( "missNo", FEMALE, MANX, 8.8);
+    //Cat testCatSeven = Cat( "missNo", UNKNOWN_GENDER, UNKNOWN_BREED, -8.8); //MANX
     testCatSeven.printCat();
     testCatSeven.validateCat();
-
-
-
-
-
+    //testCatOne.validateCat();
 
 #endif
+
+    addCat( new Cat( "cherry", FEMALE, MANX, 7.6) );
+
 
 
     /*

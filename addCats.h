@@ -10,11 +10,6 @@
 ///////////////////////////////////////////////////////////////////////////////
 #pragma once
 
-bool addCat (  const char catName[],
-               const enum Gender catGender,
-               const enum Breed catBreed,
-               const bool catIsFixed,
-               const float catWeight,
-               const enum Color catCollarColor1,
-               const enum Color catCollarColor2,
-               const unsigned long long catLicense );
+#include "Cat.h"
+
+extern bool addCat ( Cat* newCat );

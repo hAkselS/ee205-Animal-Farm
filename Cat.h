@@ -58,5 +58,5 @@ public:             //STATIC PUBLIC METHODS
     //omit validating enums for now
 public:             //PUBLIC METHODS
     bool validateCat() const noexcept;
-    bool printCat() const noexcept;
+    void printCat() const noexcept;
 };

@@ -8,6 +8,7 @@
 /// @author  Aksel Sloan <@aksel@hawaii.edu>
 /// @date   02_Apr_2022
 ///////////////////////////////////////////////////////////////////////////////
+#include <stdio.h>
 #include <cstring>
 #include <stdexcept>
 #include <iostream>
@@ -40,7 +41,7 @@ Cat::Cat(const char *newName, const Gender newGender, const Breed newBreed, cons
     setBreed( newBreed ) ;
     setWeight( newWeight ) ;
 
-    assert( validateCat() ) ;
+    //assert( validateCat() ) ; //@TODO put this back in before flight
 }
 
 ///DESTRUCTORS
@@ -145,21 +146,18 @@ bool Cat::validateBreed( const enum Breed newBreed) {
 //what the point of validating the enums???
 
 //PUBLIC METHODS
-bool Cat::validateCat() const noexcept {
-    if (validateName(catName)){
+bool Cat::validateCat() const noexcept {        //@TODO: only prints first error, not all errors
+                                                //@TODO: want to print out what cat were looking at
+    if (validateName(catName)
+        && validateWeight(catWeight)
+        && validateGender( catGender )
+        && validateBreed( catBreed ) ){
         return true;
     }
-    if (validateWeight(catWeight)){
-        return true;
-    }
-    if (validateGender(catGender)){
-        return true;
-    }
-    if (validateBreed(catBreed)) {
-        return true;
-    }
+
     else
-        //cout << PROGRAM_NAME << getName() <<  ": bad cat!" << endl;  //how to I get this to print the name of the bad cat???
+        cout << PROGRAM_NAME << ": bad cat!" << endl;  //how to I get this to print the name of the bad cat???
+
         return false;
 }
 
@@ -167,19 +165,18 @@ bool Cat::validateCat() const noexcept {
 #define FORMAT_LINE( className, member ) cout << setw(8) << (className) << setw(20) << (member) << setw(52)
 /// @returns true if everything worked correctly.  false if something goes
 ///          wrong
-bool Cat::printCat() const noexcept {
-    //assert( validateCat()) ;  //this is where animal must have weight greater than... is coming from
+void Cat::printCat() const noexcept {
+    //assert( validateCat()) ;   //this will work only if we add good cats only
     cout << setw(80) << setfill( '=' ) << "" << endl ;
     cout << setfill( ' ' ) ;
     cout << left ;
     cout << boolalpha ;
-    FORMAT_LINE( "Cat", "name" )         << getName()       << endl ;
-    FORMAT_LINE( "Cat", "gender" )       << genderString(getGender())     << endl ; //@TODO include string converters
+    FORMAT_LINE( "Cat", "name" )         << getName()                           << endl ;
+    FORMAT_LINE( "Cat", "gender" )       << genderString(getGender())  << endl ;
     FORMAT_LINE( "Cat", "breed" )        << breedString(getBreed())     << endl ;
-    FORMAT_LINE( "Cat", "isFixed" )      << isFixed()       << endl ;
-    FORMAT_LINE( "Cat", "weight" )       << getWeight()     << endl ;
+    FORMAT_LINE( "Cat", "isFixed" )      << isFixed()                           << endl ;
+    FORMAT_LINE( "Cat", "weight" )       << getWeight()                         << endl ;
 
-    return true ;
 }
 
 

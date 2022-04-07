@@ -9,12 +9,35 @@
 /// @date   20_Mar_2022
 ///////////////////////////////////////////////////////////////////////////////
 
-#include <stdio.h>
-#include <stdbool.h>
-#include <string.h>
+#include <iostream>
+#include <cassert>
+#include "Cat.h"
 #include "catDatabase.h"
 #include "addCats.h"
 #include "config.h"
+
+#define DEBUG
+using namespace std;
+
+///Linked list
+
+bool addCat ( Cat* newCat){
+    assert ( newCat != nullptr );
+    newCat -> validateCat();
+    //mark checks if cat is in database already ///@TODO validate database
+    newCat -> next = catabaseHeadPtr;
+    catabaseHeadPtr = newCat;
+    numCats ++;
+
+    #ifdef DEBUG
+        cout << PROGRAM_NAME << ": Added cat [" << newCat -> getName() << "]" << endl;
+    #endif
+
+    return true;
+}
+
+
+
 
 //#define DEBUG
 //#define DEBUG2
