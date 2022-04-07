@@ -83,12 +83,17 @@ int main(){
     addCat( new Cat( "dirtydan", UNKNOWN_GENDER, UNKNOWN_BREED, -1) );
 #endif
 
-    validateDatabase();
     printDatabase();
+    validateDatabase();
 
     //delete the first cat
     deleteCat( catabaseHeadPtr );
     printDatabase();
+    validateDatabase();
+
+    deleteAllCats();
+    printDatabase();
+    validateDatabase();
 
 
     printf("  /\\_/\\  (\n");
@@ -100,3 +105,4 @@ int main(){
     cout << "Finished with Animal Farm 1" << endl;
 
 }
+///how do assert something or make a test that doesn't output its result???

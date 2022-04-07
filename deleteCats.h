@@ -13,6 +13,6 @@
 #include "Cat.h"
 
 extern bool deleteCat ( Cat* doomedCat );
-extern void deleteAllCats ( );
+extern bool deleteAllCats ( );
 
 

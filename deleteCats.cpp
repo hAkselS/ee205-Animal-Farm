@@ -31,6 +31,24 @@ bool deleteCat ( Cat* doomedCat ){
         return true;
     }
 
+    Cat* pCatIndex = catabaseHeadPtr;
+    while ( pCatIndex != nullptr ){
+        if ( pCatIndex -> next == doomedCat ){
+            pCatIndex -> next = doomedCat -> next;
+            delete doomedCat;
+            numCats --;
+            assert(validateDatabase());
+            return true;
+        }
+        pCatIndex = pCatIndex -> next;
+    }
+    cout << PROGRAM_NAME << ": unable to delete cat" << endl;
+    return true;
 }
 
-
+bool deleteAllCats () {
+    while ( catabaseHeadPtr != nullptr ) {
+        deleteCat(catabaseHeadPtr);
+    }
+    return true;
+}
