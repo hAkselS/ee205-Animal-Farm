@@ -11,9 +11,26 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include <string.h>
+#include <iostream>
 #include "catDatabase.h"
 #include "reportCats.h"
 #include "config.h"
+
+
+
+using namespace std;
+
+bool printDatabase (){
+    int catIndex = 0;
+    Cat* pCatIndex = nullptr;
+
+    for ( pCatIndex = catabaseHeadPtr; pCatIndex != nullptr; pCatIndex = pCatIndex -> next ){
+        cout << "hi " << endl;
+    }
+    return true;
+}
+
+
 /*
 
 void printCat ( const int currentCat ){

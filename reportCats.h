@@ -10,9 +10,9 @@
 ///////////////////////////////////////////////////////////////////////////////
 #pragma once
 
-extern void printCat ( const int currentCat );
 
-extern void printAllCats ( );
+
+extern bool printDatabase ( );
 
 extern int findCat (const char catName [] );
 

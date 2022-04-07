@@ -73,6 +73,10 @@ int main(){
 #endif
 
     addCat( new Cat( "cherry", FEMALE, MANX, 7.6) );
+    addCat( new Cat( "siberia", MALE, SHORTHAIR, 400) );
+    addCat( new Cat( "obama", MALE, MAINE_COON, 35) );
+
+    printDatabase();
 
 
 
