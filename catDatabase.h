@@ -20,19 +20,11 @@ extern NumCats     numCats;
 
 extern Cat* catabaseHeadPtr;
 
+extern bool validateDatabase ();
 
 
-//create a struct
-struct Cats {
-    char                 name[MAX_NAME_LEN];
-    enum Gender          gender;
-    enum Breed           breed;
-    bool                 isFixed;
-    Weight                weight;
-    enum Color           collarColor1;
-    enum Color           collarColor2;
-    unsigned long long   license;
-};
+
+
 
 //allow other codes to access instance of Cats structure, cats
 

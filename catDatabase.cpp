@@ -8,14 +8,32 @@
 /// @author  Aksel Sloan <@aksel@hawaii.edu>
 /// @date   20_Mar_2022
 ///////////////////////////////////////////////////////////////////////////////
+#include <iostream>
 #include <stdio.h>
 #include <string.h>
 #include "catDatabase.h"
 #include "config.h"
 #include "Cat.h"
 
+using namespace std;
 Cat* catabaseHeadPtr = nullptr;
 NumCats numCats = 0;
+
+extern bool validateDatabase (){
+    int validCats = 0;
+    Cat* pCatIndex = nullptr;
+
+    for ( pCatIndex = catabaseHeadPtr; pCatIndex != nullptr; pCatIndex = pCatIndex -> next ){
+        if (!pCatIndex->validateCat()){     //if validateCat == false
+            return false;
+
+        }
+
+        validCats ++;
+    }
+    cout << PROGRAM_NAME << ": there are [" << validCats << "] valid cats" << endl;
+    return true;
+}
 //#define DEBUG
 /*
 

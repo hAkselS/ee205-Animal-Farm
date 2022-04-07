@@ -25,7 +25,8 @@ bool printDatabase (){
     Cat* pCatIndex = nullptr;
 
     for ( pCatIndex = catabaseHeadPtr; pCatIndex != nullptr; pCatIndex = pCatIndex -> next ){
-        cout << "hi " << endl;
+        pCatIndex -> printCat();
+
     }
     return true;
 }
