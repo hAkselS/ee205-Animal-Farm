@@ -27,6 +27,7 @@ bool Cat::zeroMemberVars() {
     catIsFixed  =       false;
     catWeight   =       UNKNOWN_WEIGHT;
     next        =       nullptr;
+    //@TODO include color and color color
     return true;
 }
 
@@ -36,12 +37,12 @@ Cat::Cat() {
 }
 
 Cat::Cat(const char *newName, const Gender newGender, const Breed newBreed, const Weight newWeight) {
-    setName( newName ) ;
-    setGender( newGender ) ;
-    setBreed( newBreed ) ;
-    setWeight( newWeight ) ;
-
-    //assert( validateCat() ) ; //@TODO put this back in before flight
+        setName(newName);
+        setGender(newGender);
+        setBreed(newBreed);
+        setWeight(newWeight);
+        //assert(validateCat());
+        ///@TODO dont allow cat 7 to be added
 }
 
 ///DESTRUCTORS
@@ -51,29 +52,58 @@ Cat::~Cat() {
 
 
 ///SETTERS
-void Cat::setName(const char *newName) {
-    validateName( newName );                    //validate new name
+bool Cat::setName(const char *newName) {
+    if (!validateName( newName )){
+        return false;
+    }                    //validate new name
 
     memset( catName, 0, MAX_NAME_LEN);  //destroy old name
 
     strcpy( catName, newName );        //destination, source
+    return true;
 }
 
-void Cat::setGender( const enum Gender newGender ) {
+bool Cat::setGender( const enum Gender newGender ) {
+    if ( newGender == UNKNOWN_GENDER){
+        cout << PROGRAM_NAME << ": cat gender cannot be updated to unknown" << endl;
+        return false;
+    }
+    if ( Cat::catGender != UNKNOWN_GENDER ){
+        cout << PROGRAM_NAME << ": cat gender cannot be changed" << endl;
+        return false;
+    }
     Cat::catGender = newGender;  //why use Cat:: in this line if were already in a cat function???
+    return true;
 }
 
-void Cat::setBreed( const enum Breed newBreed ) {
+bool Cat::setBreed( const enum Breed newBreed ) {
+    if ( newBreed == UNKNOWN_BREED){
+        cout << PROGRAM_NAME << ": cat breed cannot be updated to unknown" << endl;
+        return false;
+    }
+    if ( Cat::catBreed != UNKNOWN_BREED ) {
+        cout << PROGRAM_NAME << ": cat breed cannot be changed" << endl;
+        return false;
+    }
     Cat::catBreed = newBreed;
+    return true;
 }
 
-void Cat::fixCat (){
+bool Cat::fixCat (){
+    if ( catIsFixed ){
+        cout << PROGRAM_NAME << ": cat cannot be fixed twice" << endl;
+        return false;
+    }
     Cat::catIsFixed = true;
+    return true;
 }
 
-void Cat::setWeight( const Weight newWeight ){
-    validateWeight( newWeight );    //why doesn't this have Cat:: ???
+bool Cat::setWeight( const Weight newWeight ){
+    if (!validateWeight( newWeight )){
+        return false;
+    }   //why doesn't this have Cat:: ???
     Cat::catWeight = newWeight;
+    return true;
 }
 
 ///GETTERS
@@ -117,7 +147,7 @@ bool Cat::validateName(const char *newName) {
 }
 
 bool Cat::validateWeight(const Weight newWeight) {
-    if ( newWeight <= 0 ){
+    if ( newWeight <= 0.0 ){
         cout << PROGRAM_NAME << ": Cats must have weight greater than 0" << endl;
         return false;
     }

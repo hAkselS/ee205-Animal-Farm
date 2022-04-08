@@ -36,11 +36,11 @@ public:             //PUBLIC MEMBER VARIABLES
     ~Cat();
 
 public:             //SETTERS
-    void setName( const char* newName );
-    void setGender( const enum Gender newGender );
-    void setBreed( const enum Breed newBreed );
-    void fixCat ( );
-    void setWeight( const Weight newWeight );
+    bool setName( const char* newName );
+    bool setGender( const enum Gender newGender );
+    bool setBreed( const enum Breed newBreed );
+    bool fixCat ( );
+    bool setWeight( const Weight newWeight );
 
 public:             //GETTERS
     const char* getName() const noexcept;  //what does const noexpect do???

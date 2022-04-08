@@ -9,13 +9,11 @@
 /// @date   20_Mar_2022
 ///////////////////////////////////////////////////////////////////////////////
 #include <iostream>
-#include <stdio.h>
-#include <string.h>
 #include "catDatabase.h"
 #include "config.h"
 #include "Cat.h"
 
-#define DEBUG
+#define DEBUG  ///remove before flight
 
 using namespace std;
 Cat* catabaseHeadPtr = nullptr;

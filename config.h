@@ -15,7 +15,7 @@ typedef float Weight;
 typedef int NumCats;
 
 //defines
-#define MAX_NAME_LEN 50
+#define MAX_NAME_LEN 20
 #define MAX_CATS 1024
 #define UNKNOWN_WEIGHT -1
 
