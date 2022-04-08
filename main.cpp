@@ -101,10 +101,10 @@ int main(){
     assert(!testCatTwo.setWeight( 0 ));
     cout << PROGRAM_NAME << ": test 13 passed" << endl;
     ///test 14
-    Weight small = 1/1024;
+    Weight small = 1/float(1024);
     cout << small << endl;
     cout << 1/1024 << endl;
-    assert(!testCatTwo.setWeight( (1/1024) )); ///@TODO why won't this weight work
+    assert(testCatTwo.setWeight( (1/float(1024) ))); ///@TODO why won't this weight work
     cout << PROGRAM_NAME << ": test 14 passed" << endl;
     ///test 15
     Cat testCatThree = Cat( "winston", MALE, SHORTHAIR, 1.7);
@@ -153,7 +153,6 @@ int main(){
 ///@TODO
 // find cat by name
 // destructor in delete cat, zero values before deleting maybe???
-// 1/1024 problem
 // cat 7 problem
 // find by name test
 // delete cat test

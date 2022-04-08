@@ -147,7 +147,7 @@ bool Cat::validateName(const char *newName) {
 }
 
 bool Cat::validateWeight(const Weight newWeight) {
-    if ( newWeight <= 0.0 ){
+    if ( newWeight <= 0 ){
         cout << PROGRAM_NAME << ": Cats must have weight greater than 0" << endl;
         return false;
     }
