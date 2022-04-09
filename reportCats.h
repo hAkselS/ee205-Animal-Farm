@@ -14,6 +14,6 @@
 
 extern bool printDatabase ( );
 
-extern int findCat (const char catName [] );
+extern Cat* findCatByName ( const char* findName );
 
 

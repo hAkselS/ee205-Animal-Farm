@@ -27,7 +27,6 @@ bool Cat::zeroMemberVars() {
     catIsFixed  =       false;
     catWeight   =       UNKNOWN_WEIGHT;
     next        =       nullptr;
-    //@TODO include color and color color
     return true;
 }
 
@@ -36,13 +35,18 @@ Cat::Cat() {
     zeroMemberVars();
 }
 
-Cat::Cat(const char *newName, const Gender newGender, const Breed newBreed, const Weight newWeight) {
+Cat::Cat(const char *newName, const Gender newGender, const Breed newBreed, const Weight newWeight) : Cat () {
+    if (validateName( newName )
+        && validateGender( newGender )
+        && validateBreed( newBreed )
+        && validateWeight( newWeight ) ){
+
         setName(newName);
         setGender(newGender);
         setBreed(newBreed);
         setWeight(newWeight);
-        //assert(validateCat());
-        ///@TODO dont allow cat 7 to be added
+    }
+
 }
 
 ///DESTRUCTORS
@@ -176,8 +180,8 @@ bool Cat::validateBreed( const enum Breed newBreed) {
 //what the point of validating the enums???
 
 //PUBLIC METHODS
-bool Cat::validateCat() const noexcept {        //@TODO: only prints first error, not all errors
-                                                //@TODO: want to print out what cat were looking at
+bool Cat::validateCat() const noexcept {
+
     if (validateName(catName)
         && validateWeight(catWeight)
         && validateGender( catGender )

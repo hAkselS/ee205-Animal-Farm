@@ -20,7 +20,10 @@
 using namespace std ;
 
 bool deleteCat ( Cat* doomedCat ){
-    assert( doomedCat != nullptr);
+    if (doomedCat == nullptr){
+        cout << PROGRAM_NAME << "this cat does not exist" << endl;
+        return false;
+    }
     ///validate database???
     //if we want to delete the first cat
     if ( doomedCat == catabaseHeadPtr ){

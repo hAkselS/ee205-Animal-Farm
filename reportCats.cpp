@@ -10,7 +10,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 #include <stdbool.h>
 #include <stdio.h>
-#include <string.h>
+#include <cstring>
 #include <iostream>
 #include "catDatabase.h"
 #include "reportCats.h"
@@ -29,4 +29,16 @@ bool printDatabase (){
 
     }
     return true;
+}
+
+Cat* findCatByName ( const char* findName ){
+    //validate the name entered
+    Cat* pCatIndex = nullptr;
+    for ( pCatIndex = catabaseHeadPtr; pCatIndex != nullptr; pCatIndex = pCatIndex->next ){
+        if ( strcmp( findName, pCatIndex->getName()) == 0 ){
+            return pCatIndex;
+        }
+    }
+    cout << PROGRAM_NAME << ": [" << findName << "] is not in database" << endl;
+    return nullptr; ///case that the cat was not found
 }

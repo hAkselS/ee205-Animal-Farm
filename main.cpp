@@ -101,10 +101,7 @@ int main(){
     assert(!testCatTwo.setWeight( 0 ));
     cout << PROGRAM_NAME << ": test 13 passed" << endl;
     ///test 14
-    Weight small = 1/float(1024);
-    cout << small << endl;
-    cout << 1/1024 << endl;
-    assert(testCatTwo.setWeight( (1/float(1024) ))); ///@TODO why won't this weight work
+    assert(testCatTwo.setWeight( (1/float(1024) )));
     cout << PROGRAM_NAME << ": test 14 passed" << endl;
     ///test 15
     Cat testCatThree = Cat( "winston", MALE, SHORTHAIR, 1.7);
@@ -114,12 +111,10 @@ int main(){
     Cat testCatFour = Cat( "winston", UNKNOWN_GENDER, SHORTHAIR, 1.7);
     Cat testCatFive = Cat( "winston", MALE, UNKNOWN_BREED, 1.7);
     Cat testCatSix = Cat( "winston", MALE, SHORTHAIR, UNKNOWN_WEIGHT);
-    Cat testCatSeven = Cat( "winston", UNKNOWN_GENDER, UNKNOWN_BREED, 1.7); ///@TODO this cat should fail
+    Cat testCatSeven = Cat( "winston", UNKNOWN_GENDER, UNKNOWN_BREED, 1.7);
     Cat testCatEight = Cat( "winston", MALE, UNKNOWN_BREED, UNKNOWN_WEIGHT);
     Cat testCatNine = Cat( "winston", UNKNOWN_GENDER, SHORTHAIR, UNKNOWN_WEIGHT);
     Cat testCatTen = Cat( "winston", UNKNOWN_GENDER, UNKNOWN_BREED, UNKNOWN_WEIGHT);
-    testCatSeven.printCat();
-    testCatOne.printCat();
     assert(!testCatFour.validateCat());
     assert(!testCatFive.validateCat());
     assert(!testCatSix.validateCat());
@@ -128,14 +123,20 @@ int main(){
     assert(!testCatNine.validateCat());
     assert(!testCatTen.validateCat());
     cout << PROGRAM_NAME << ": test 16 passed" << endl;
-
-    assert(!testCatOne.setName("titties"));
-
-    cout << "hell" << endl;
-
-
-
-
+    ///test 17
+    assert(!(findCatByName("Bella") == nullptr));
+    cout << PROGRAM_NAME << ": test 17 passed" << endl;
+    assert(!(findCatByName("Bella") == nullptr));
+    cout << PROGRAM_NAME << ": test 17 passed again" << endl;
+    ///test 18
+    assert((findCatByName("Belinda") == nullptr));
+    cout << PROGRAM_NAME << ": test 18 passed" << endl;
+    ////test 19
+    assert(deleteCat(findCatByName( "Bella" )));
+    cout << PROGRAM_NAME << ": test 19 passed" << endl;
+    ///test 20
+    assert(!deleteCat(findCatByName( "Bella" )));
+    cout << PROGRAM_NAME << ": test 20 passed" << endl;
 
 #endif
 
@@ -150,13 +151,5 @@ int main(){
 }
 ///how do assert something or make a test that doesn't output its result???
 
-///@TODO
-// find cat by name
-// destructor in delete cat, zero values before deleting maybe???
-// cat 7 problem
-// find by name test
-// delete cat test
-//
-//
-// 9 hours so far
+
 
