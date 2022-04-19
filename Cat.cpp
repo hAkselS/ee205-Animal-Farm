@@ -22,8 +22,8 @@ using namespace std;
 
 bool Cat::zeroMemberVars() {
     memset( catName, 0, MAX_NAME_LEN);
-    catGender   =       UNKNOWN_GENDER;
-    catBreed    =       UNKNOWN_BREED;
+    catGender   =       Gender::UNKNOWN_GENDER;
+    catBreed    =       Breed::UNKNOWN_BREED;
     catIsFixed  =       false;
     catWeight   =       UNKNOWN_WEIGHT;
     next        =       nullptr;
@@ -68,11 +68,11 @@ bool Cat::setName(const char *newName) {
 }
 
 bool Cat::setGender( const enum Gender newGender ) {
-    if ( newGender == UNKNOWN_GENDER){
+    if ( newGender == Gender::UNKNOWN_GENDER){
         cout << PROGRAM_NAME << ": cat gender cannot be updated to unknown" << endl;
         return false;
     }
-    if ( Cat::catGender != UNKNOWN_GENDER ){
+    if ( Cat::catGender != Gender::UNKNOWN_GENDER ){
         cout << PROGRAM_NAME << ": cat gender cannot be changed" << endl;
         return false;
     }
@@ -81,11 +81,11 @@ bool Cat::setGender( const enum Gender newGender ) {
 }
 
 bool Cat::setBreed( const enum Breed newBreed ) {
-    if ( newBreed == UNKNOWN_BREED){
+    if ( newBreed == Breed::UNKNOWN_BREED){
         cout << PROGRAM_NAME << ": cat breed cannot be updated to unknown" << endl;
         return false;
     }
-    if ( Cat::catBreed != UNKNOWN_BREED ) {
+    if ( Cat::catBreed != Breed::UNKNOWN_BREED ) {
         cout << PROGRAM_NAME << ": cat breed cannot be changed" << endl;
         return false;
     }
@@ -160,7 +160,7 @@ bool Cat::validateWeight(const Weight newWeight) {
 }
 
 bool Cat::validateGender( const enum Gender newGender ) {
-    if ( newGender == UNKNOWN_GENDER ){
+    if ( newGender == Gender::UNKNOWN_GENDER ){
         cout << PROGRAM_NAME << ": Gender must be known" << endl;
         return false;
     }
@@ -169,7 +169,7 @@ bool Cat::validateGender( const enum Gender newGender ) {
 }
 
 bool Cat::validateBreed( const enum Breed newBreed) {
-    if ( newBreed == UNKNOWN_BREED) {
+    if ( newBreed == Breed::UNKNOWN_BREED) {
         cout << PROGRAM_NAME << ": Gender must be known" << endl;
         return false;
     }
@@ -194,11 +194,64 @@ bool Cat::validateCat() const noexcept {
 
         return false;
 }
+///put to operator for printing classes
+/// Output Gender as a formatted string
+///
+/// @param lhs_stream The output stream to write to (usually `cout`).  `
+///                   `lhs` stands for Left Hand Side and means the left side
+///                   of the `<<` operator.
+/// @param rhs_Gender The Gender to output.
+///                   `rhs` stands for Right Hand Side and means the right
+///                   side of the `<<` operator.
+/// @return `Unknown gender`, `Female` or `Male`.
+inline std::ostream& operator<<( std::ostream& lhs_stream, const Gender& rhs_Gender ){
+    switch( rhs_Gender ) {
+        case Gender::UNKNOWN_GENDER:
+            lhs_stream << "Unknown gender";
+            break;
+        case Gender::MALE:
+            lhs_stream << "Male";
+            break;
+        case Gender::FEMALE:
+            lhs_stream << "Female";
+            break;
+        default:
+            /// @throw out_of_range If the enum is not mapped to a string.
+            throw std::out_of_range( PROGRAM_NAME ": Gender not mapped to a string" );
+    }
+    return lhs_stream;
+}
+///put to oporator for breed
+inline std::ostream& operator<<( std::ostream& lhs_stream, const Breed& rhs_Breed ){
+    switch( rhs_Breed ) {
+        case Breed::UNKNOWN_BREED:
+            lhs_stream << "Unknown breed";
+            break;
+        case Breed::MAINE_COON:
+            lhs_stream << "Main Coon";
+            break;
+        case Breed::MANX:
+            lhs_stream << "Manx";
+            break;
+        case Breed::SHORTHAIR:
+            lhs_stream << "Shorthair";
+            break;
+        case Breed::PERSIAN:
+            lhs_stream << "Persian";
+            break;
+        case Breed::SPHYNX:
+            lhs_stream << "Sphynx";
+            break;
+        default:
+            /// @throw out_of_range If the enum is not mapped to a string.
+            throw std::out_of_range( PROGRAM_NAME ": Breed not mapped to a string" );
+    }
+    return lhs_stream;
+}
 
 /// Format a line for printing the members of a class
 #define FORMAT_LINE( className, member ) cout << setw(8) << (className) << setw(20) << (member) << setw(52)
-/// @returns true if everything worked correctly.  false if something goes
-///          wrong
+
 void Cat::printCat() const noexcept {
     //assert( validateCat()) ;   //this will work only if we add good cats only
     cout << setw(80) << setfill( '=' ) << "" << endl ;
@@ -206,8 +259,8 @@ void Cat::printCat() const noexcept {
     cout << left ;
     cout << boolalpha ;
     FORMAT_LINE( "Cat", "name" )         << getName()                           << endl ;
-    FORMAT_LINE( "Cat", "gender" )       << genderString(getGender())  << endl ;
-    FORMAT_LINE( "Cat", "breed" )        << breedString(getBreed())     << endl ;
+    FORMAT_LINE( "Cat", "gender" )       << getGender()  << endl ; ///this may need fixing
+    FORMAT_LINE( "Cat", "breed" )        << getBreed()     << endl ;
     FORMAT_LINE( "Cat", "isFixed" )      << isFixed()                           << endl ;
     FORMAT_LINE( "Cat", "weight" )       << getWeight()                         << endl ;
 

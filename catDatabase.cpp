@@ -39,21 +39,21 @@ extern bool validateDatabase (){
 }
 
 //enum to string converters
-const char* genderString ( const enum Gender catGender ){
-    switch ( catGender ){
-        case 0:
-            return "unknown gender";
-            break;
-        case 1:
-            return "female";
-            break;
-        case 2:
-            return "male";
-            break;
-    }
-    return "no information";
-}
-
+//const char* genderString ( const enum Gender catGender ){
+//    switch ( catGender ){
+//        case 0:
+//            return "unknown gender";
+//            break;
+//        case 1:
+//            return "female";
+//            break;
+//        case 2:
+//            return "male";
+//            break;
+//    }
+//    return "no information";
+//}
+/*
 const char* breedString ( const enum Breed catBreed ){
     switch ( catBreed ){
         case 0:
@@ -76,8 +76,8 @@ const char* breedString ( const enum Breed catBreed ){
             break;
     }
     return "no information";
-}
-
+}*/
+/*
 const char* colorString ( const enum Color collarColor ){
     switch ( collarColor ){
         case 0:
@@ -100,7 +100,7 @@ const char* colorString ( const enum Color collarColor ){
             break;
     }
     return "no information";
-}
+}*/
 
 void validateMe( ){
     printf( "you're doing great, hunny\n" );
