@@ -122,6 +122,12 @@
 		<Unit filename="/tmp/tmp.OXzw5ZwGmP/updateCats.h">
 			<Option target="_ee205_lab_08d_animal_farm_1_to_clion"/>
 		</Unit>
+		<Unit filename="/tmp/tmp.OXzw5ZwGmP/weight.cpp">
+			<Option target="_ee205_lab_08d_animal_farm_1_to_clion"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.OXzw5ZwGmP/weight.h">
+			<Option target="_ee205_lab_08d_animal_farm_1_to_clion"/>
+		</Unit>
 		<Unit filename="/tmp/tmp.OXzw5ZwGmP/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

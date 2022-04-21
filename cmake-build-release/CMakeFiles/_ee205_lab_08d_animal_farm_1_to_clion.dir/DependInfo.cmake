@@ -15,6 +15,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/tmp/tmp.OXzw5ZwGmP/main.cpp" "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/main.cpp.o" "gcc" "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/main.cpp.o.d"
   "/tmp/tmp.OXzw5ZwGmP/reportCats.cpp" "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/reportCats.cpp.o" "gcc" "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/reportCats.cpp.o.d"
   "/tmp/tmp.OXzw5ZwGmP/updateCats.cpp" "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/updateCats.cpp.o" "gcc" "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/updateCats.cpp.o.d"
+  "/tmp/tmp.OXzw5ZwGmP/weight.cpp" "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/weight.cpp.o" "gcc" "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/weight.cpp.o.d"
   )
 
 # Targets to which this target links.

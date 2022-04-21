@@ -21,7 +21,7 @@
 using namespace std;
 
 bool Cat::zeroMemberVars() {
-    memset( catName, 0, MAX_NAME_LEN);
+    catName     =       "";
     catGender   =       Gender::UNKNOWN_GENDER;
     catBreed    =       Breed::UNKNOWN_BREED;
     catIsFixed  =       false;
@@ -35,13 +35,13 @@ Cat::Cat() {
     zeroMemberVars();
 }
 
-Cat::Cat(const char *newName, const Gender newGender, const Breed newBreed, const Weight newWeight) : Cat () {
+Cat::Cat( std::string newName, const Gender newGender, const Breed newBreed, const Weight newWeight) : Cat () {
     if (validateName( newName )
         && validateGender( newGender )
         && validateBreed( newBreed )
         && validateWeight( newWeight ) ){
 
-        setName(newName);
+        setName( newName );
         setGender(newGender);
         setBreed(newBreed);
         setWeight(newWeight);
@@ -56,14 +56,16 @@ Cat::~Cat() {
 
 
 ///SETTERS
-bool Cat::setName(const char *newName) {
-    if (!validateName( newName )){
+bool Cat::setName( std::string newName ) {
+    if (newName == "" ){
+        cout << PROGRAM_NAME << ": cannot set empty name" << endl;
         return false;
-    }                    //validate new name
-
-    memset( catName, 0, MAX_NAME_LEN);  //destroy old name
-
-    strcpy( catName, newName );        //destination, source
+    }
+    if ( newName.length() >= MAX_NAME_LEN ){
+        cout << PROGRAM_NAME << ": name cannot be longer than max name length" << endl;
+        return false;
+    }
+    catName = newName;
     return true;
 }
 
@@ -111,7 +113,7 @@ bool Cat::setWeight( const Weight newWeight ){
 }
 
 ///GETTERS
-const char *Cat::getName() const noexcept {
+std::string Cat::getName() const noexcept {
     return catName;
 }
 
@@ -132,22 +134,9 @@ Weight Cat::getWeight() const noexcept {
 }
 
 ///VALIDATION
-bool Cat::validateName(const char *newName) {
-    if ( newName == nullptr ){      //check for empty name
-        cout << PROGRAM_NAME << ": Cat name cannot equal null" << endl;
-        return false;
-    }
-    if ( strlen( newName ) <= 0 ){
-        cout << PROGRAM_NAME << ": Cat name must be more than 0 characters" << endl;
-        return false;
-    }
-    if( strlen( newName ) >= MAX_NAME_LEN) {
-        cout << PROGRAM_NAME << ": Cat name cannot be longer than max name length" << endl;
-        return false;
-    }
-
-    else
-            return true;
+bool Cat::validateName( std::string newName) {
+   cout << " validate name does nothing rn " << endl;
+   return true;
 }
 
 bool Cat::validateWeight(const Weight newWeight) {

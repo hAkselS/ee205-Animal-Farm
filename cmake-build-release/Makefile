@@ -297,6 +297,30 @@ updateCats.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/updateCats.cpp.s
 .PHONY : updateCats.cpp.s
 
+weight.o: weight.cpp.o
+.PHONY : weight.o
+
+# target to build an object file
+weight.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/weight.cpp.o
+.PHONY : weight.cpp.o
+
+weight.i: weight.cpp.i
+.PHONY : weight.i
+
+# target to preprocess a source file
+weight.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/weight.cpp.i
+.PHONY : weight.cpp.i
+
+weight.s: weight.cpp.s
+.PHONY : weight.s
+
+# target to generate assembly for a file
+weight.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/weight.cpp.s
+.PHONY : weight.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -327,6 +351,9 @@ help:
 	@echo "... updateCats.o"
 	@echo "... updateCats.i"
 	@echo "... updateCats.s"
+	@echo "... weight.o"
+	@echo "... weight.i"
+	@echo "... weight.s"
 .PHONY : help
 
 

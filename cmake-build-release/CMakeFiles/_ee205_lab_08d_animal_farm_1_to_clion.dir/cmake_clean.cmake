@@ -13,6 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/reportCats.cpp.o.d"
   "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/updateCats.cpp.o"
   "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/updateCats.cpp.o.d"
+  "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/weight.cpp.o"
+  "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/weight.cpp.o.d"
   "_ee205_lab_08d_animal_farm_1_to_clion"
   "_ee205_lab_08d_animal_farm_1_to_clion.pdb"
 )

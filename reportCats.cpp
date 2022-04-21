@@ -8,8 +8,6 @@
 /// @author  Aksel Sloan <@aksel@hawaii.edu>
 /// @date   20_Mar_2022
 ///////////////////////////////////////////////////////////////////////////////
-#include <stdbool.h>
-#include <stdio.h>
 #include <cstring>
 #include <iostream>
 #include "catDatabase.h"
@@ -31,11 +29,11 @@ bool printDatabase (){
     return true;
 }
 
-Cat* findCatByName ( const char* findName ){
+Cat* findCatByName ( const std::string findName ){
     //validate the name entered
     Cat* pCatIndex = nullptr;
     for ( pCatIndex = catabaseHeadPtr; pCatIndex != nullptr; pCatIndex = pCatIndex->next ){
-        if ( strcmp( findName, pCatIndex->getName()) == 0 ){
+        if ( findName == pCatIndex->getName()){
             return pCatIndex;
         }
     }

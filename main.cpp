@@ -38,10 +38,10 @@ int main(){
     ///Production code
     addCat( new Cat( "Loki", Gender::MALE, Breed::PERSIAN, 1.0 )) ;
     addCat( new Cat( "Milo", Gender::MALE, Breed::MANX , 1.1 )) ;
-    //addCat( new Cat( "Bella", FEMALE, MAINE_COON, 1.2 )) ;
-    //addCat( new Cat( "Kali", FEMALE, SHORTHAIR, 1.3 )) ;
-    //addCat( new Cat( "Trin", FEMALE, MANX, 1.4 )) ;
-    //addCat( new Cat( "Chili", MALE, SHORTHAIR, 1.5 )) ;
+    addCat( new Cat( "Bella", Gender::FEMALE, Breed::MAINE_COON, 1.2 )) ;
+    addCat( new Cat( "Kali", Gender::FEMALE, Breed::SHORTHAIR, 1.3 )) ;
+    addCat( new Cat( "Trin", Gender::FEMALE, Breed::MANX, 1.4 )) ;
+    addCat( new Cat( "Chili", Gender::MALE, Breed::SHORTHAIR, 1.5 )) ;
 
     printDatabase();
 
@@ -51,8 +51,7 @@ int main(){
     //check that default values are working
     Cat testCatOne = Cat();
     ///test 1
-    assert(testCatOne.getName() != nullptr );   //name doesn't point to null
-    assert(strcmp(testCatOne.getName(), "") == 0); //name is empty
+    assert(testCatOne.getName() == "" );   //name doesn't point to null
     assert(testCatOne.getGender() == Gender::UNKNOWN_GENDER);
     assert(testCatOne.getBreed() == Breed::UNKNOWN_BREED);
     assert(testCatOne.isFixed() == false);
@@ -65,7 +64,7 @@ int main(){
     assert(!testCatOne.validateCat());
     cout << PROGRAM_NAME << ": test 2 passed" << endl;
     ///test 3
-    assert(!testCatOne.setName(nullptr ));
+    assert(!testCatOne.setName("" ));
     cout << PROGRAM_NAME << ": test 3 passed" << endl;
     ///test 4
     assert(!testCatOne.setName(""));
@@ -104,17 +103,21 @@ int main(){
     assert(testCatTwo.setWeight( (1/float(1024) )));
     cout << PROGRAM_NAME << ": test 14 passed" << endl;
     ///test 15
-    /*Cat testCatThree = Cat( "winston", MALE, SHORTHAIR, 1.7);
+    Cat testCatThree = Cat( "winston", Gender::MALE, Breed::SHORTHAIR, 1.7);
     assert( testCatThree.validateCat());
+    Cat* pTestCatThree = &testCatThree;
+    addCat( pTestCatThree );
+    printDatabase();
     cout << PROGRAM_NAME << ": test 15 passed" << endl;
+
     ///test 16
-    Cat testCatFour = Cat( "winston", UNKNOWN_GENDER, SHORTHAIR, 1.7);
-    Cat testCatFive = Cat( "winston", MALE, UNKNOWN_BREED, 1.7);
-    Cat testCatSix = Cat( "winston", MALE, SHORTHAIR, UNKNOWN_WEIGHT);
-    Cat testCatSeven = Cat( "winston", UNKNOWN_GENDER, UNKNOWN_BREED, 1.7);
-    Cat testCatEight = Cat( "winston", MALE, UNKNOWN_BREED, UNKNOWN_WEIGHT);
-    Cat testCatNine = Cat( "winston", UNKNOWN_GENDER, SHORTHAIR, UNKNOWN_WEIGHT);
-    Cat testCatTen = Cat( "winston", UNKNOWN_GENDER, UNKNOWN_BREED, UNKNOWN_WEIGHT);
+    Cat testCatFour = Cat( "winston", Gender::UNKNOWN_GENDER, Breed::SHORTHAIR, 1.7);
+    Cat testCatFive = Cat( "winston", Gender::MALE, Breed::UNKNOWN_BREED, 1.7);
+    Cat testCatSix = Cat( "winston", Gender::MALE, Breed::SHORTHAIR, UNKNOWN_WEIGHT);
+    Cat testCatSeven = Cat( "winston", Gender::UNKNOWN_GENDER, Breed::UNKNOWN_BREED, 1.7);
+    Cat testCatEight = Cat( "winston", Gender::MALE, Breed::UNKNOWN_BREED, UNKNOWN_WEIGHT);
+    Cat testCatNine = Cat( "winston", Gender::UNKNOWN_GENDER, Breed::SHORTHAIR, UNKNOWN_WEIGHT);
+    Cat testCatTen = Cat( "winston", Gender::UNKNOWN_GENDER, Breed::UNKNOWN_BREED, UNKNOWN_WEIGHT);
     assert(!testCatFour.validateCat());
     assert(!testCatFive.validateCat());
     assert(!testCatSix.validateCat());
@@ -137,7 +140,7 @@ int main(){
     ///test 20
     assert(!deleteCat(findCatByName( "Bella" )));
     cout << PROGRAM_NAME << ": test 20 passed" << endl;
-*/
+
 #endif
 
     printf("  /\\_/\\  (\n");

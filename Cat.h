@@ -9,7 +9,7 @@
 /// @date   02_Apr_2022
 ///////////////////////////////////////////////////////////////////////////////
 #pragma once
-
+#include <istream>
 #include "config.h"
 
 
@@ -18,7 +18,7 @@ private:
     bool zeroMemberVars();      //return true if it zeros successfully
 
 protected:          //MEMBER VARIABLES
-    char            catName[MAX_NAME_LEN]       ;
+    std::string     catName                     ;
     enum Gender     catGender                   ;
     enum Breed      catBreed                    ;
     bool            catIsFixed                  ;
@@ -30,20 +30,20 @@ public:             //PUBLIC MEMBER VARIABLES
                     //CONSTRUCTORS
     Cat();          //make a cat with "default" values
 
-    Cat( const char* newName, const Gender newGender, const Breed newBreed, const Weight newWeight ); // may have problem here with enum Gender to Gender
+    Cat( std::string newName, const Gender newGender, const Breed newBreed, const Weight newWeight ); // may have problem here with enum Gender to Gender
 
                     //DESTRUCTORS
     ~Cat();
 
 public:             //SETTERS
-    bool setName( const char* newName );
+    bool setName( std::string newName );
     bool setGender( const enum Gender newGender );
     bool setBreed( const enum Breed newBreed );
     bool fixCat ( );
     bool setWeight( const Weight newWeight );
 
 public:             //GETTERS
-    const char* getName() const noexcept;  //what does const noexpect do???
+    std::string getName() const noexcept;  //what does const noexpect do???
     Gender getGender() const noexcept;     //why can I leave off enum here??
     Breed getBreed() const noexcept;
     bool isFixed() const noexcept;
@@ -51,7 +51,7 @@ public:             //GETTERS
 
 
 public:             //STATIC PUBLIC METHODS
-    static bool validateName        ( const char* newName );   //validate input cat name
+    static bool validateName        ( const std::string newName );   //validate input cat name
     static bool validateWeight      ( const Weight newWeight );
     static bool validateGender      ( const enum Gender newGender );
     static bool validateBreed       ( const enum Breed newBreed );
