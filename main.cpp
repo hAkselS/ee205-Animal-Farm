@@ -29,12 +29,16 @@
 #include "updateCats.h"
 #include "deleteCats.h"
 #include "Cat.h"
+//#include "Weight.h"
 
 #define DEBUG
 
 using namespace std;
+
+
 int main(){
     cout << "Starting Animal Farm 1" << endl;
+/*
     ///Production code
     addCat( new Cat( "Loki", Gender::MALE, Breed::PERSIAN, 1.0 )) ;
     addCat( new Cat( "Milo", Gender::MALE, Breed::MANX , 1.1 )) ;
@@ -142,6 +146,9 @@ int main(){
     cout << PROGRAM_NAME << ": test 20 passed" << endl;
 
 #endif
+*/
+    addCat( new Cat( "ringo", Gender::MALE, Breed::PERSIAN, 4.20));
+    printDatabase();
 
     printf("  /\\_/\\  (\n");
     printf(" ( ^.^ ) _)\n");
