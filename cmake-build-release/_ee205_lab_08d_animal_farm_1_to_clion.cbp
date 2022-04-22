@@ -80,10 +80,46 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/tmp/tmp.OXzw5ZwGmP/Animal.cpp">
+			<Option target="_ee205_lab_08d_animal_farm_1_to_clion"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.OXzw5ZwGmP/Animal.h">
+			<Option target="_ee205_lab_08d_animal_farm_1_to_clion"/>
+		</Unit>
 		<Unit filename="/tmp/tmp.OXzw5ZwGmP/Cat.cpp">
 			<Option target="_ee205_lab_08d_animal_farm_1_to_clion"/>
 		</Unit>
 		<Unit filename="/tmp/tmp.OXzw5ZwGmP/Cat.h">
+			<Option target="_ee205_lab_08d_animal_farm_1_to_clion"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.OXzw5ZwGmP/List.cpp">
+			<Option target="_ee205_lab_08d_animal_farm_1_to_clion"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.OXzw5ZwGmP/List.h">
+			<Option target="_ee205_lab_08d_animal_farm_1_to_clion"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.OXzw5ZwGmP/Mammal.cpp">
+			<Option target="_ee205_lab_08d_animal_farm_1_to_clion"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.OXzw5ZwGmP/Mammal.h">
+			<Option target="_ee205_lab_08d_animal_farm_1_to_clion"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.OXzw5ZwGmP/Node.cpp">
+			<Option target="_ee205_lab_08d_animal_farm_1_to_clion"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.OXzw5ZwGmP/Node.h">
+			<Option target="_ee205_lab_08d_animal_farm_1_to_clion"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.OXzw5ZwGmP/SinglyLinkedList.cpp">
+			<Option target="_ee205_lab_08d_animal_farm_1_to_clion"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.OXzw5ZwGmP/SinglyLinkedList.h">
+			<Option target="_ee205_lab_08d_animal_farm_1_to_clion"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.OXzw5ZwGmP/Weight.cpp">
+			<Option target="_ee205_lab_08d_animal_farm_1_to_clion"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.OXzw5ZwGmP/Weight.h">
 			<Option target="_ee205_lab_08d_animal_farm_1_to_clion"/>
 		</Unit>
 		<Unit filename="/tmp/tmp.OXzw5ZwGmP/addCats.cpp">
@@ -120,12 +156,6 @@
 			<Option target="_ee205_lab_08d_animal_farm_1_to_clion"/>
 		</Unit>
 		<Unit filename="/tmp/tmp.OXzw5ZwGmP/updateCats.h">
-			<Option target="_ee205_lab_08d_animal_farm_1_to_clion"/>
-		</Unit>
-		<Unit filename="/tmp/tmp.OXzw5ZwGmP/weight.cpp">
-			<Option target="_ee205_lab_08d_animal_farm_1_to_clion"/>
-		</Unit>
-		<Unit filename="/tmp/tmp.OXzw5ZwGmP/weight.h">
 			<Option target="_ee205_lab_08d_animal_farm_1_to_clion"/>
 		</Unit>
 		<Unit filename="/tmp/tmp.OXzw5ZwGmP/CMakeLists.txt">

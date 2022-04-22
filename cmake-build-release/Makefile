@@ -129,6 +129,30 @@ _ee205_lab_08d_animal_farm_1_to_clion/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build
 .PHONY : _ee205_lab_08d_animal_farm_1_to_clion/fast
 
+Animal.o: Animal.cpp.o
+.PHONY : Animal.o
+
+# target to build an object file
+Animal.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Animal.cpp.o
+.PHONY : Animal.cpp.o
+
+Animal.i: Animal.cpp.i
+.PHONY : Animal.i
+
+# target to preprocess a source file
+Animal.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Animal.cpp.i
+.PHONY : Animal.cpp.i
+
+Animal.s: Animal.cpp.s
+.PHONY : Animal.s
+
+# target to generate assembly for a file
+Animal.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Animal.cpp.s
+.PHONY : Animal.cpp.s
+
 Cat.o: Cat.cpp.o
 .PHONY : Cat.o
 
@@ -152,6 +176,126 @@ Cat.s: Cat.cpp.s
 Cat.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Cat.cpp.s
 .PHONY : Cat.cpp.s
+
+List.o: List.cpp.o
+.PHONY : List.o
+
+# target to build an object file
+List.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/List.cpp.o
+.PHONY : List.cpp.o
+
+List.i: List.cpp.i
+.PHONY : List.i
+
+# target to preprocess a source file
+List.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/List.cpp.i
+.PHONY : List.cpp.i
+
+List.s: List.cpp.s
+.PHONY : List.s
+
+# target to generate assembly for a file
+List.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/List.cpp.s
+.PHONY : List.cpp.s
+
+Mammal.o: Mammal.cpp.o
+.PHONY : Mammal.o
+
+# target to build an object file
+Mammal.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Mammal.cpp.o
+.PHONY : Mammal.cpp.o
+
+Mammal.i: Mammal.cpp.i
+.PHONY : Mammal.i
+
+# target to preprocess a source file
+Mammal.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Mammal.cpp.i
+.PHONY : Mammal.cpp.i
+
+Mammal.s: Mammal.cpp.s
+.PHONY : Mammal.s
+
+# target to generate assembly for a file
+Mammal.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Mammal.cpp.s
+.PHONY : Mammal.cpp.s
+
+Node.o: Node.cpp.o
+.PHONY : Node.o
+
+# target to build an object file
+Node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Node.cpp.o
+.PHONY : Node.cpp.o
+
+Node.i: Node.cpp.i
+.PHONY : Node.i
+
+# target to preprocess a source file
+Node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Node.cpp.i
+.PHONY : Node.cpp.i
+
+Node.s: Node.cpp.s
+.PHONY : Node.s
+
+# target to generate assembly for a file
+Node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Node.cpp.s
+.PHONY : Node.cpp.s
+
+SinglyLinkedList.o: SinglyLinkedList.cpp.o
+.PHONY : SinglyLinkedList.o
+
+# target to build an object file
+SinglyLinkedList.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/SinglyLinkedList.cpp.o
+.PHONY : SinglyLinkedList.cpp.o
+
+SinglyLinkedList.i: SinglyLinkedList.cpp.i
+.PHONY : SinglyLinkedList.i
+
+# target to preprocess a source file
+SinglyLinkedList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/SinglyLinkedList.cpp.i
+.PHONY : SinglyLinkedList.cpp.i
+
+SinglyLinkedList.s: SinglyLinkedList.cpp.s
+.PHONY : SinglyLinkedList.s
+
+# target to generate assembly for a file
+SinglyLinkedList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/SinglyLinkedList.cpp.s
+.PHONY : SinglyLinkedList.cpp.s
+
+Weight.o: Weight.cpp.o
+.PHONY : Weight.o
+
+# target to build an object file
+Weight.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Weight.cpp.o
+.PHONY : Weight.cpp.o
+
+Weight.i: Weight.cpp.i
+.PHONY : Weight.i
+
+# target to preprocess a source file
+Weight.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Weight.cpp.i
+.PHONY : Weight.cpp.i
+
+Weight.s: Weight.cpp.s
+.PHONY : Weight.s
+
+# target to generate assembly for a file
+Weight.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Weight.cpp.s
+.PHONY : Weight.cpp.s
 
 addCats.o: addCats.cpp.o
 .PHONY : addCats.o
@@ -297,30 +441,6 @@ updateCats.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/updateCats.cpp.s
 .PHONY : updateCats.cpp.s
 
-weight.o: weight.cpp.o
-.PHONY : weight.o
-
-# target to build an object file
-weight.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/weight.cpp.o
-.PHONY : weight.cpp.o
-
-weight.i: weight.cpp.i
-.PHONY : weight.i
-
-# target to preprocess a source file
-weight.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/weight.cpp.i
-.PHONY : weight.cpp.i
-
-weight.s: weight.cpp.s
-.PHONY : weight.s
-
-# target to generate assembly for a file
-weight.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/weight.cpp.s
-.PHONY : weight.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -330,9 +450,27 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... _ee205_lab_08d_animal_farm_1_to_clion"
+	@echo "... Animal.o"
+	@echo "... Animal.i"
+	@echo "... Animal.s"
 	@echo "... Cat.o"
 	@echo "... Cat.i"
 	@echo "... Cat.s"
+	@echo "... List.o"
+	@echo "... List.i"
+	@echo "... List.s"
+	@echo "... Mammal.o"
+	@echo "... Mammal.i"
+	@echo "... Mammal.s"
+	@echo "... Node.o"
+	@echo "... Node.i"
+	@echo "... Node.s"
+	@echo "... SinglyLinkedList.o"
+	@echo "... SinglyLinkedList.i"
+	@echo "... SinglyLinkedList.s"
+	@echo "... Weight.o"
+	@echo "... Weight.i"
+	@echo "... Weight.s"
 	@echo "... addCats.o"
 	@echo "... addCats.i"
 	@echo "... addCats.s"
@@ -351,9 +489,6 @@ help:
 	@echo "... updateCats.o"
 	@echo "... updateCats.i"
 	@echo "... updateCats.s"
-	@echo "... weight.o"
-	@echo "... weight.i"
-	@echo "... weight.s"
 .PHONY : help
 
 

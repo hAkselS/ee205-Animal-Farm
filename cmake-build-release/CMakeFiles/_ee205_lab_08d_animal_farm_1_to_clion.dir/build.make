@@ -167,19 +167,89 @@ CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Cat.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Cat.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.OXzw5ZwGmP/Cat.cpp -o CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Cat.cpp.s
 
-CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/weight.cpp.o: CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/flags.make
-CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/weight.cpp.o: ../weight.cpp
-CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/weight.cpp.o: CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.OXzw5ZwGmP/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/weight.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/weight.cpp.o -MF CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/weight.cpp.o.d -o CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/weight.cpp.o -c /tmp/tmp.OXzw5ZwGmP/weight.cpp
+CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Weight.cpp.o: CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/flags.make
+CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Weight.cpp.o: ../Weight.cpp
+CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Weight.cpp.o: CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.OXzw5ZwGmP/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Weight.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Weight.cpp.o -MF CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Weight.cpp.o.d -o CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Weight.cpp.o -c /tmp/tmp.OXzw5ZwGmP/Weight.cpp
 
-CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/weight.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/weight.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.OXzw5ZwGmP/weight.cpp > CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/weight.cpp.i
+CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Weight.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Weight.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.OXzw5ZwGmP/Weight.cpp > CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Weight.cpp.i
 
-CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/weight.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/weight.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.OXzw5ZwGmP/weight.cpp -o CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/weight.cpp.s
+CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Weight.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Weight.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.OXzw5ZwGmP/Weight.cpp -o CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Weight.cpp.s
+
+CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Node.cpp.o: CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/flags.make
+CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Node.cpp.o: ../Node.cpp
+CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Node.cpp.o: CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.OXzw5ZwGmP/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Node.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Node.cpp.o -MF CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Node.cpp.o.d -o CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Node.cpp.o -c /tmp/tmp.OXzw5ZwGmP/Node.cpp
+
+CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Node.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Node.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.OXzw5ZwGmP/Node.cpp > CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Node.cpp.i
+
+CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Node.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Node.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.OXzw5ZwGmP/Node.cpp -o CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Node.cpp.s
+
+CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/List.cpp.o: CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/flags.make
+CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/List.cpp.o: ../List.cpp
+CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/List.cpp.o: CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.OXzw5ZwGmP/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/List.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/List.cpp.o -MF CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/List.cpp.o.d -o CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/List.cpp.o -c /tmp/tmp.OXzw5ZwGmP/List.cpp
+
+CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/List.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/List.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.OXzw5ZwGmP/List.cpp > CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/List.cpp.i
+
+CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/List.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/List.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.OXzw5ZwGmP/List.cpp -o CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/List.cpp.s
+
+CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/SinglyLinkedList.cpp.o: CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/flags.make
+CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/SinglyLinkedList.cpp.o: ../SinglyLinkedList.cpp
+CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/SinglyLinkedList.cpp.o: CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.OXzw5ZwGmP/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/SinglyLinkedList.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/SinglyLinkedList.cpp.o -MF CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/SinglyLinkedList.cpp.o.d -o CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/SinglyLinkedList.cpp.o -c /tmp/tmp.OXzw5ZwGmP/SinglyLinkedList.cpp
+
+CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/SinglyLinkedList.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/SinglyLinkedList.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.OXzw5ZwGmP/SinglyLinkedList.cpp > CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/SinglyLinkedList.cpp.i
+
+CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/SinglyLinkedList.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/SinglyLinkedList.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.OXzw5ZwGmP/SinglyLinkedList.cpp -o CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/SinglyLinkedList.cpp.s
+
+CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Animal.cpp.o: CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/flags.make
+CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Animal.cpp.o: ../Animal.cpp
+CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Animal.cpp.o: CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.OXzw5ZwGmP/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Animal.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Animal.cpp.o -MF CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Animal.cpp.o.d -o CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Animal.cpp.o -c /tmp/tmp.OXzw5ZwGmP/Animal.cpp
+
+CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Animal.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Animal.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.OXzw5ZwGmP/Animal.cpp > CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Animal.cpp.i
+
+CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Animal.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Animal.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.OXzw5ZwGmP/Animal.cpp -o CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Animal.cpp.s
+
+CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Mammal.cpp.o: CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/flags.make
+CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Mammal.cpp.o: ../Mammal.cpp
+CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Mammal.cpp.o: CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.OXzw5ZwGmP/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Mammal.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Mammal.cpp.o -MF CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Mammal.cpp.o.d -o CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Mammal.cpp.o -c /tmp/tmp.OXzw5ZwGmP/Mammal.cpp
+
+CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Mammal.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Mammal.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.OXzw5ZwGmP/Mammal.cpp > CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Mammal.cpp.i
+
+CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Mammal.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Mammal.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.OXzw5ZwGmP/Mammal.cpp -o CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Mammal.cpp.s
 
 # Object files for target _ee205_lab_08d_animal_farm_1_to_clion
 _ee205_lab_08d_animal_farm_1_to_clion_OBJECTS = \
@@ -190,7 +260,12 @@ _ee205_lab_08d_animal_farm_1_to_clion_OBJECTS = \
 "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/reportCats.cpp.o" \
 "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/updateCats.cpp.o" \
 "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Cat.cpp.o" \
-"CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/weight.cpp.o"
+"CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Weight.cpp.o" \
+"CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Node.cpp.o" \
+"CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/List.cpp.o" \
+"CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/SinglyLinkedList.cpp.o" \
+"CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Animal.cpp.o" \
+"CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Mammal.cpp.o"
 
 # External object files for target _ee205_lab_08d_animal_farm_1_to_clion
 _ee205_lab_08d_animal_farm_1_to_clion_EXTERNAL_OBJECTS =
@@ -202,10 +277,15 @@ _ee205_lab_08d_animal_farm_1_to_clion: CMakeFiles/_ee205_lab_08d_animal_farm_1_t
 _ee205_lab_08d_animal_farm_1_to_clion: CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/reportCats.cpp.o
 _ee205_lab_08d_animal_farm_1_to_clion: CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/updateCats.cpp.o
 _ee205_lab_08d_animal_farm_1_to_clion: CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Cat.cpp.o
-_ee205_lab_08d_animal_farm_1_to_clion: CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/weight.cpp.o
+_ee205_lab_08d_animal_farm_1_to_clion: CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Weight.cpp.o
+_ee205_lab_08d_animal_farm_1_to_clion: CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Node.cpp.o
+_ee205_lab_08d_animal_farm_1_to_clion: CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/List.cpp.o
+_ee205_lab_08d_animal_farm_1_to_clion: CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/SinglyLinkedList.cpp.o
+_ee205_lab_08d_animal_farm_1_to_clion: CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Animal.cpp.o
+_ee205_lab_08d_animal_farm_1_to_clion: CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Mammal.cpp.o
 _ee205_lab_08d_animal_farm_1_to_clion: CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make
 _ee205_lab_08d_animal_farm_1_to_clion: CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/tmp/tmp.OXzw5ZwGmP/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable _ee205_lab_08d_animal_farm_1_to_clion"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/tmp/tmp.OXzw5ZwGmP/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable _ee205_lab_08d_animal_farm_1_to_clion"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
