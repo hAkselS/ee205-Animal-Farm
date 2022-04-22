@@ -13,6 +13,7 @@
 #include "catDatabase.h"
 #include "reportCats.h"
 #include "config.h"
+/*
 
 
 
@@ -39,4 +40,4 @@ Cat* findCatByName ( const std::string findName ){
     }
     cout << PROGRAM_NAME << ": [" << findName << "] is not in database" << endl;
     return nullptr; ///case that the cat was not found
-}
+}*/

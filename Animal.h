@@ -8,13 +8,31 @@
 /// @author  Aksel Sloan <@aksel@hawaii.edu>
 /// @date   21_Apr_2022
 ///////////////////////////////////////////////////////////////////////////////
-#ifndef _EE205_LAB_08D_ANIMAL_FARM_1_TO_CLION_ANIMAL_H
-#define _EE205_LAB_08D_ANIMAL_FARM_1_TO_CLION_ANIMAL_H
+#pragma once
+#include <iostream>
+#include "config.h"
+#include "Node.h"
+#include "Weight.h"
 
+using namespace std;
+class Animal : public Node {
+private:    ///private member variables
+    string species;
+    string classification;
+    Gender gender = Gender::UNKNOWN_GENDER;
+    Breed breed = Breed::UNKNOWN_BREED;
+    Weight weight;
+public:     ///public member variables
+    static string KINGDOM_NAME;
 
-class Animal {
+public:     ///constructors
+    ///minimal constructor
+    Animal( const float nexMaxWeight, const std::string newClassification, const std::string newSpecies  );
+    ///maximal constructor
+    Animal ( const Gender newGender, const float newWeight, const float newMaxWeight,
+             const std::string newClassification, const std::string newSpecies );
 
 };
 
 
-#endif //_EE205_LAB_08D_ANIMAL_FARM_1_TO_CLION_ANIMAL_H
+

@@ -12,7 +12,7 @@
 #include <istream>
 #include "config.h"
 
-
+/*
 class Cat {
 private:
     bool zeroMemberVars();      //return true if it zeros successfully
@@ -60,3 +60,4 @@ public:             //PUBLIC METHODS
     bool validateCat() const noexcept;
     void printCat() const noexcept;
 };
+ */

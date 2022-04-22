@@ -12,7 +12,8 @@
 #include <iostream>
 #include "Cat.h"
 
+/*
 extern bool deleteCat ( Cat* doomedCat );
 extern bool deleteAllCats ( );
 
-
+*/

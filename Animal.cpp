@@ -8,4 +8,13 @@
 /// @author  Aksel Sloan <@aksel@hawaii.edu>
 /// @date   21_Apr_2022
 ///////////////////////////////////////////////////////////////////////////////
+#include <iostream>
 #include "Animal.h"
+#include "Weight.h"
+
+        ///constructors
+        ///minimal
+Animal::Animal(const float newMaxWeight, std::string const newClassification, const std::string newSpecies) : weight(Weight::POUND, newMaxWeight ) { //use unit / max constructor
+
+
+}

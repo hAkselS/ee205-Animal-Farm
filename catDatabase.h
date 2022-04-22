@@ -14,7 +14,7 @@
 #include "config.h"
 #include "Cat.h"
 
-
+/*
 //global variables
 extern NumCats     numCats;
 
@@ -31,3 +31,4 @@ extern const char* breedString ( const enum Breed catBreed );
 extern const char* colorString ( const enum Color collarColor );
 
 extern void initializeCats();
+*/

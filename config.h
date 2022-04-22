@@ -12,13 +12,13 @@
 #include <iostream>
 #include <iomanip>
 //typedefs
-typedef float Weight;
+//typedef float Weight; //refactor to t_weight
 typedef int NumCats;
 
 //defines
 #define MAX_NAME_LEN 20
 #define MAX_CATS 1024
-#define UNKNOWN_WEIGHT -1
+///#define UNKNOWN_WEIGHT (-1) //defined somehwere else
 
 #define PROGRAM_NAME "Animal Farm 2"
 
@@ -44,3 +44,4 @@ enum class          Color  {BLACK, WHITE, RED, BLUE, GREEN, PINK};
               << std::setw(8)  << (className)             \
               << std::setw(20) << (member)                \
               << std::setw(52)  /* (data) */
+

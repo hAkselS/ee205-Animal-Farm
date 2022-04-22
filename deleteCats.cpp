@@ -16,7 +16,7 @@
 #include "deleteCats.h"
 #include "catDatabase.h"
 #include "Cat.h"
-
+/*
 using namespace std ;
 
 bool deleteCat ( Cat* doomedCat ){
@@ -55,3 +55,4 @@ bool deleteAllCats () {
     }
     return true;
 }
+*/

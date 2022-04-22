@@ -10,7 +10,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 #pragma once
 
-
+/*
 extern bool updateCatName ( const int currentCat, const char newCatName[] );
 
 extern bool fixCat ( const int currentCat );
@@ -22,3 +22,4 @@ extern bool updateCollarColor1 ( const int currentCat, enum Color newCollarColor
 extern bool updateCollarColor2 ( const int currentCat, enum Color newCollarColor2 );
 
 extern bool updateLicense ( const int currentCat, const unsigned long long newLicense );
+*/

@@ -31,6 +31,7 @@ public:
             std::cout << "validate: empty lists are valid" << std::endl;
             return true;
         }
+        return true;
     }
 public:
     virtual bool operator>(const Node& rhs_Node ){

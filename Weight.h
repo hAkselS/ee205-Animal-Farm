@@ -13,6 +13,8 @@
 
 
 class Weight {
+    friend class Animal;
+
 public:     ///enums & labels
     enum UnitOfMeasure { POUND, KILO, SLUG };
     static const std::string POUND_LABEL;
