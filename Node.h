@@ -8,9 +8,10 @@
 /// @author  Aksel Sloan <@aksel@hawaii.edu>
 /// @date   21_Apr_2022
 ///////////////////////////////////////////////////////////////////////////////
-#ifndef _EE205_LAB_08D_ANIMAL_FARM_1_TO_CLION_NODE_H
-#define _EE205_LAB_08D_ANIMAL_FARM_1_TO_CLION_NODE_H
+#pragma once
+#include <iostream>
 
+#include "config.h"
 
 class Node {
     ///allow list and singlylinked to access protected and pirvate functions
@@ -19,9 +20,24 @@ class Node {
 protected:
     Node* next = nullptr;
     //virtual override for >
-    //void dump();
 
+public:
+    virtual void dump() const {
+        FORMAT_LINE_FOR_DUMP( "Node", this ) << this << std::endl;
+        FORMAT_LINE_FOR_DUMP( "Node", next ) << next << std::endl;
+    }
+    virtual bool validate() const {
+        if ( next == nullptr ){
+            std::cout << "validate: empty lists are valid" << std::endl;
+            return true;
+        }
+    }
+public:
+    virtual bool operator>(const Node& rhs_Node ){
+        std::cout << "operator > always returns true" << std::endl;
+        return true;
+    }
 };
 
 
-#endif //_EE205_LAB_08D_ANIMAL_FARM_1_TO_CLION_NODE_H
+

@@ -9,7 +9,8 @@
 /// @date   20_Mar_2022
 ///////////////////////////////////////////////////////////////////////////////
 #pragma once
-
+#include <iostream>
+#include <iomanip>
 //typedefs
 typedef float Weight;
 typedef int NumCats;
