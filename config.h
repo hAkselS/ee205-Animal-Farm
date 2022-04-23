@@ -18,7 +18,7 @@ typedef int NumCats;
 //defines
 #define MAX_NAME_LEN 20
 #define MAX_CATS 1024
-///#define UNKNOWN_WEIGHT (-1) //defined somehwere else
+#define UNKNOWN_WEIGHT -1
 
 #define PROGRAM_NAME "Animal Farm 2"
 

@@ -21,7 +21,7 @@ using namespace std;
 const string Weight::POUND_LABEL   = "Pound"   ;
 const string Weight::KILO_LABEL    = "Kilo"    ;
 const string Weight::SLUG_LABEL    = "Slug"    ;
-const float Weight :: UNKNOWN_WEIGHT    = -1;
+//const float Weight :: UNKNOWN_WEIGHT    = UNKNOWN_WEIGHT;
 
 
 

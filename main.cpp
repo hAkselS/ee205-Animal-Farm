@@ -23,13 +23,9 @@
 #include <iostream>
 #include <cassert>
 #include <cstring>
-#include "catDatabase.h"
-#include "addCats.h"
-#include "reportCats.h"
-#include "updateCats.h"
-#include "deleteCats.h"
+#include "Animal.h"
 #include "Cat.h"
-//#include "Weight.h"
+#include "Weight.h"
 
 #define DEBUG
 
@@ -38,6 +34,8 @@ using namespace std;
 
 int main(){
     cout << "Starting Animal Farm 3" << endl;
+    ///sparatic testing
+    Animal animalOne ( 42, "cattus", "fattus" );
 
     printf("  /\\_/\\  (\n");
     printf(" ( ^.^ ) _)\n");

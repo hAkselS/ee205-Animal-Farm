@@ -15,6 +15,8 @@
         ///constructors
         ///minimal
 Animal::Animal(const float newMaxWeight, std::string const newClassification, const std::string newSpecies) : weight(Weight::POUND, newMaxWeight ) { //use unit / max constructor
-
+    //@todo validation
+    classification = newClassification;
+    species = newSpecies;
 
 }

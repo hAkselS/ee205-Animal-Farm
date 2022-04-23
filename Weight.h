@@ -10,6 +10,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 #pragma once
 #include <string>
+#include "config.h"
 
 
 class Weight {
@@ -23,8 +24,6 @@ public:     ///enums & labels
 
 
 
-    ///unknown weight
-    static const float UNKNOWN_WEIGHT    ;
     ///conversion scalars
     static const float KILOS_PER_POUND  ;
     static const float SLUGS_PER_POUND  ;
