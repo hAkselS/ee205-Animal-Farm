@@ -134,7 +134,7 @@ Weight::Weight(float newWeight, Weight::UnitOfMeasure newUnitOfMeasure) {
     }
     assert(validate());
 }
-///5 problem here
+///5
 Weight::Weight( float newWeight, float newMaxWeight) : Weight( newWeight ){
     setMaxWeight( newMaxWeight); //somehow messes with units of measure
     assert(validate());
@@ -276,7 +276,7 @@ void Weight::dump() const noexcept {
     FORMAT_LINE( "Weight", "this" )             << this                                     << endl ;
     FORMAT_LINE( "Weight", "isKnown" )          << isWeightKnown()                          << endl ;
     FORMAT_LINE( "Weight", "weight" )           << getWeight( getUnits() )       << endl ;
-    FORMAT_LINE( "Weight", "unitOfMeasure" )    << getUnits()                               << endl ;
+    //FORMAT_LINE( "Weight", "unitOfMeasure" )    << getUnits()                               << endl ;
     FORMAT_LINE( "Weight", "hasMaxWeight" )     << hasMaxWeight()                           << endl ;
     FORMAT_LINE( "Weight", "MaxWeight" )        << getMaxWeight()                           << endl ;
 
@@ -323,7 +323,7 @@ bool Weight::isWeightValid(const float inputWeight) const noexcept {
 
 ///OPERATORS
 ///put to operator
-std::ostream& operator<<( std::ostream& lhs_stream
+/*std::ostream& operator<<( std::ostream& lhs_stream
         ,const Weight::UnitOfMeasure rhs_UnitOfMeasure ) {
     switch (rhs_UnitOfMeasure) {
         case Weight::POUND:
@@ -335,7 +335,8 @@ std::ostream& operator<<( std::ostream& lhs_stream
         default:
             throw std::out_of_range("The unit can’t be mapped to a string");
     }
-}
+}*/
+
 bool Weight::operator==(const Weight &rhs_Weight) const {
     float lhs_weight = (bIsKnown) ? this->getWeight(Weight::POUND) : 0;
     float rhs_weight = (bIsKnown) ? rhs_Weight.getWeight( Weight::POUND ) : 0;

@@ -21,9 +21,9 @@ private:    ///private member variables
     string classification;
     Gender gender = Gender::UNKNOWN_GENDER;
     Breed breed = Breed::UNKNOWN_BREED;
-    Weight weight;
+    Weight t_weight;
 public:     ///public member variables
-    static string KINGDOM_NAME;
+    static const string KINGDOM_NAME;
 
 public:     ///constructors
     ///minimal constructor
@@ -32,6 +32,17 @@ public:     ///constructors
     Animal ( const Gender newGender, const float newWeight, const float newMaxWeight,
              const std::string newClassification, const std::string newSpecies );
 
+public:     ///getters
+    std::string getKingdom() const noexcept;
+    std::string getClassification() const noexcept;
+    std::string getSpecies() const noexcept;
+
+    Gender getGender() const noexcept;
+/*Weight::t_weight getWeight() const noexcept;
+void setWeight( const Weight::t_weight newWeight );*/
+
+public:
+    void dump()const;
 };
 
 

@@ -36,6 +36,12 @@ int main(){
     cout << "Starting Animal Farm 3" << endl;
     ///sparatic testing
     Animal animalOne ( 42, "cattus", "fattus" );
+    ///test getters
+    cout << animalOne.getKingdom() << endl;
+    cout << animalOne.getClassification() << endl;
+    cout << animalOne.getSpecies() << endl;
+    animalOne.dump();
+    cout << endl;
 
     printf("  /\\_/\\  (\n");
     printf(" ( ^.^ ) _)\n");
@@ -47,6 +53,6 @@ int main(){
 
 }
 ///how do assert something or make a test that doesn't output its result???
-
+//@todo figure out how to print the enum classes
 
 
