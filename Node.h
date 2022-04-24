@@ -15,28 +15,39 @@
 
 class Node {
     ///allow list and singlylinked to access protected and pirvate functions
-//friend class SinglyLinkedList;
+    friend class SinglyLinkedList;
     friend class List;
 protected:
-    Node* next = nullptr;
-    //virtual override for >
+    Node* next = nullptr;   ///store next pointer
+
+        ///compare nodes
+    static bool compareByAddress ( const Node* node1, Node* node2 ){
+        if ( node1 > node1 ){
+            return true;
+        }
+        return false;
+    }
 
 public:
+        ///virtual function for dump, declare the format
     virtual void dump() const {
         FORMAT_LINE_FOR_DUMP( "Node", this ) << this << std::endl;
         FORMAT_LINE_FOR_DUMP( "Node", next ) << next << std::endl;
     }
+        ///basis of validate
     virtual bool validate() const {
         if ( next == nullptr ){
             std::cout << "validate: empty lists are valid" << std::endl;
             return true;
         }
+        if ( next == next->next ){
+            std::cout << "Node: validate: recursive loop detected" << std::endl;
+            return false;
+        }
         return true;
     }
-public:
     virtual bool operator>(const Node& rhs_Node ){
-        std::cout << "operator > always returns true" << std::endl;
-        return true;
+        return compareByAddress( this, &(Node&) rhs_Node );
     }
 };
 
