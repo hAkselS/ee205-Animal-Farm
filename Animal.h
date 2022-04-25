@@ -40,10 +40,15 @@ public:     ///getters
     //t_weight getWeight() const; ALREADY IN WEIGHT CLASS
 
 protected:  ///setters
-    bool setClassification ( std::string newClassification);
+    void setClassification ( std::string newClassification);
+    ///you can add more here
+
+public:     ///abstract methods
+    //virtual std::string speak() const; ///@todo, ask mark about this. gives fat error
 
 public:
     void dump()const;
+    bool validateAnimal() const;
 };
 
 

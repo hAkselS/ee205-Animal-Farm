@@ -42,6 +42,7 @@ int main(){
     cout << animalOne.getKingdom() << endl;
     cout << animalOne.getClassification() << endl;
     cout << animalOne.getSpecies() << endl;
+    animalOne.validateAnimal();
     animalOne.dump(); //@todo, sometimes things don't get set, other times they do???
     cout << endl;
 
@@ -54,8 +55,10 @@ int main(){
     Animal animalThree ( Gender::FEMALE, 13, 14, "chungus", "bungus");
     animalThree.dump();
 
-    cout << "dump animalOne again" << endl;
-    animalOne.dump();
+    //cout << "bad animal" << endl;
+    //Animal badAnimal ( Gender:: UNKNOWN_GENDER, 1, 1.1, "", "" );
+
+
 
     printf("  /\\_/\\  (\n");
     printf(" ( ^.^ ) _)\n");

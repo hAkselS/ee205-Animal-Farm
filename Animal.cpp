@@ -19,7 +19,7 @@ const std::string Animal::KINGDOM_NAME = "Animalia";
 Animal::Animal(const t_weight newMaxWeight, std::string const newClassification, const std::string newSpecies) { //use unit / max constructor
     //@todo validation
     weightClass.setMaxWeight( newMaxWeight ); //set things, don't use a constructor
-    classification = newClassification;
+    setClassification( newClassification );
     species = newSpecies;
 
 }
@@ -48,7 +48,11 @@ std::string Animal::getSpecies() const noexcept {
 Gender Animal::getGender() const noexcept { //@todo, get this working (more specifically the put to operator)
     return gender;
 }
-
+            ///setters
+void Animal::setClassification(std::string newClassification) {
+    assert( !newClassification.empty());
+    classification = newClassification;
+}
 
 
             ///dump
@@ -66,10 +70,22 @@ void Animal::dump() const {
 
 }
 
-bool Animal::setClassification(std::string newClassification) {
-    assert( !newClassification.empty());
+bool Animal::validateAnimal() const {
+    assert( !classification.empty() );
+    assert( !species.empty() );
+    if ( weightClass.bIsKnown ){
+        assert( weightClass.getWeight() > 0 );
+        if ( weightClass.bHasMax ){
+            assert( weightClass.getMaxWeight() > weightClass.getWeight() );
+        }
+    }
+    if ( weightClass.bHasMax ){
+        assert( weightClass.getMaxWeight() > 0 );
+    }
     return true;
 }
+
+
 
 
 
