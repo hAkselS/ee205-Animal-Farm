@@ -18,9 +18,9 @@ using namespace std;
 
 
 ///labels and such
-const string Weight::POUND_LABEL   = "Pound"   ;
-const string Weight::KILO_LABEL    = "Kilo"    ;
-const string Weight::SLUG_LABEL    = "Slug"    ;
+const string Weight::POUND_LABEL   = "Pounds"   ;
+const string Weight::KILO_LABEL    = "Kilos"    ;
+const string Weight::SLUG_LABEL    = "Slugs"    ;
 //const float Weight :: UNKNOWN_WEIGHT    = UNKNOWN_WEIGHT;
 
 

@@ -36,15 +36,19 @@ int main(){
     cout << "Starting Animal Farm 3" << endl;
 
     ///sparatic testing
+    cout << "make animalOne" << endl;
     Animal animalOne ( 42, "cattus", "fattus" );
     ///test getters
     cout << animalOne.getKingdom() << endl;
     cout << animalOne.getClassification() << endl;
     cout << animalOne.getSpecies() << endl;
-    animalOne.dump();
+    animalOne.dump(); //@todo, sometimes things don't get set, other times they do???
     cout << endl;
-    Weight catOne( Weight::POUND, 12 );
-    catOne.dump();
+
+    cout << "make animalTwo" << endl;
+    Animal animalTwo ( Gender::MALE, 10, 12, "doggus", "loggus");
+    animalTwo.dump();
+
 
     printf("  /\\_/\\  (\n");
     printf(" ( ^.^ ) _)\n");

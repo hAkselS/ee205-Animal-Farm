@@ -21,7 +21,7 @@ private:    ///private member variables
     string classification;
     Gender gender = Gender::UNKNOWN_GENDER;
     Breed breed = Breed::UNKNOWN_BREED;
-    Weight weightClass;
+    Weight weightClass; //@todo, this instantiates
 public:     ///public member variables
     static const string KINGDOM_NAME;
 

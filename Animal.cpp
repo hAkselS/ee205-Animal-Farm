@@ -16,15 +16,18 @@ const std::string Animal::KINGDOM_NAME = "Animalia";
         ///constructors
         ///minimal
 Animal::Animal(const t_weight newMaxWeight, std::string const newClassification, const std::string newSpecies) { //use unit / max constructor
-    //@todo validation and fixing weight constructor
-    //Weight::setMaxWeight( newMaxWeight );
+    //@todo validation
+    weightClass.setMaxWeight( newMaxWeight ); //set things, don't use a constructor
     classification = newClassification;
     species = newSpecies;
 
 }
 
 Animal::Animal(const Gender newGender, const float newWeight, const float newMaxWeight,
-               const std::string newClassification, const std::string newSpecies)  {
+               const std::string newClassification, const std::string newSpecies)
+               : Animal( newMaxWeight ,newClassification, newSpecies ){
+    weightClass.setWeight( newWeight );
+    gender = newGender;
 }
 
 
@@ -53,27 +56,39 @@ void Animal::dump() const {
     FORMAT_LINE_FOR_DUMP( "Animal", "this" )        << this                 << endl;
     FORMAT_LINE_FOR_DUMP( "Animal", "kingdom" )        << getKingdom()                 << endl;
     FORMAT_LINE_FOR_DUMP( "Animal", "classification" )        << getClassification()                 << endl;
-    FORMAT_LINE_FOR_DUMP( "Animal", "species" )        << getSpecies()                 << endl;
-    //FORMAT_LINE_FOR_DUMP( "Animal", "gender" )        << getGender()                 << endl;
-    //FORMAT_LINE_FOR_DUMP( "Animal", "weight" )        << getWeight()  << "out of" << getMaxWeight() << getUnits()               << endl;
+    FORMAT_LINE_FOR_DUMP( "Animal", "species" )        << getSpecies()                 << endl; //@todo, ask mark about this
+    // FORMAT_LINE_FOR_DUMP( "Animal", "gender" )        << getGender() /*gender doesnt work either*/                 << endl;
+    FORMAT_LINE_FOR_DUMP( "Animal", "weight" )    << weightClass.getWeight()  << " out of " << weightClass.getMaxWeight() << " " << weightClass.getUnits() << endl;
 
 }
 
             ///put to operator
 //how should I deal with this? seems like only one definition of put to operator per cpp
-//if in .h it will redefine each time .h file is included and give error!
-std::ostream& operator<<( std::ostream& lhs_stream
-        ,const Gender rhs_UnitOfMeasure ) {
-    switch (rhs_UnitOfMeasure) {
-        case Gender::UNKNOWN_GENDER:
-            return lhs_stream << Gender::UNKNOWN_GENDER;
-        case Gender::MALE:
-            return lhs_stream << Gender::MALE;
-        case Gender::FEMALE:
-            return lhs_stream << Gender::FEMALE;
-        default:
-            throw std::out_of_range("The unit can’t be mapped to a string");
-    }
-}
 
+/// Output Gender as a formatted string
+///
+/// @param lhs_stream The output stream to write to (usually `cout`).  `
+///                   `lhs` stands for Left Hand Side and means the left side
+///                   of the `<<` operator.
+/// @param rhs_Gender The Gender to output.
+///                   `rhs` stands for Right Hand Side and means the right
+///                   side of the `<<` operator.
+/// @return `Unknown gender`, `Female` or `Male`.
+inline std::ostream& operator<<( std::ostream& lhs_stream, const Gender& rhs_Gender ) {
+    switch (rhs_Gender) {
+        case Gender::UNKNOWN_GENDER:
+            lhs_stream << "Unknown gender";
+            break;
+        case Gender::MALE:
+            lhs_stream << "Male";
+            break;
+        case Gender::FEMALE:
+            lhs_stream << "Female";
+            break;
+        default:
+
+            throw std::out_of_range(PROGRAM_NAME ": Gender not mapped to a string");
+    }
+    return lhs_stream;
+}
 
