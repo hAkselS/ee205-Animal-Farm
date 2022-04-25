@@ -15,12 +15,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/tmp/tmp.OXzw5ZwGmP/Node.cpp" "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Node.cpp.o" "gcc" "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Node.cpp.o.d"
   "/tmp/tmp.OXzw5ZwGmP/SinglyLinkedList.cpp" "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/SinglyLinkedList.cpp.o" "gcc" "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/SinglyLinkedList.cpp.o.d"
   "/tmp/tmp.OXzw5ZwGmP/Weight.cpp" "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Weight.cpp.o" "gcc" "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Weight.cpp.o.d"
-  "/tmp/tmp.OXzw5ZwGmP/addCats.cpp" "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/addCats.cpp.o" "gcc" "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/addCats.cpp.o.d"
-  "/tmp/tmp.OXzw5ZwGmP/catDatabase.cpp" "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/catDatabase.cpp.o" "gcc" "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/catDatabase.cpp.o.d"
-  "/tmp/tmp.OXzw5ZwGmP/deleteCats.cpp" "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/deleteCats.cpp.o" "gcc" "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/deleteCats.cpp.o.d"
   "/tmp/tmp.OXzw5ZwGmP/main.cpp" "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/main.cpp.o" "gcc" "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/main.cpp.o.d"
-  "/tmp/tmp.OXzw5ZwGmP/reportCats.cpp" "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/reportCats.cpp.o" "gcc" "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/reportCats.cpp.o.d"
-  "/tmp/tmp.OXzw5ZwGmP/updateCats.cpp" "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/updateCats.cpp.o" "gcc" "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/updateCats.cpp.o.d"
   )
 
 # Targets to which this target links.

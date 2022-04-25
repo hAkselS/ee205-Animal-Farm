@@ -123,8 +123,19 @@ CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/main.cpp.o: \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc /usr/include/c++/11/cassert \
  /usr/include/assert.h /usr/include/c++/11/cstring /usr/include/string.h \
- /usr/include/strings.h /tmp/tmp.OXzw5ZwGmP/catDatabase.h \
- /usr/lib/gcc/x86_64-redhat-linux/11/include/stdbool.h \
- /tmp/tmp.OXzw5ZwGmP/config.h /tmp/tmp.OXzw5ZwGmP/Cat.h \
- /tmp/tmp.OXzw5ZwGmP/addCats.h /tmp/tmp.OXzw5ZwGmP/reportCats.h \
- /tmp/tmp.OXzw5ZwGmP/updateCats.h /tmp/tmp.OXzw5ZwGmP/deleteCats.h
+ /usr/include/strings.h /tmp/tmp.OXzw5ZwGmP/Animal.h \
+ /tmp/tmp.OXzw5ZwGmP/config.h /usr/include/c++/11/iomanip \
+ /usr/include/c++/11/locale \
+ /usr/include/c++/11/bits/locale_facets_nonio.h /usr/include/c++/11/ctime \
+ /usr/include/c++/11/x86_64-redhat-linux/bits/time_members.h \
+ /usr/include/c++/11/x86_64-redhat-linux/bits/messages_members.h \
+ /usr/include/libintl.h /usr/include/c++/11/bits/codecvt.h \
+ /usr/include/c++/11/bits/locale_facets_nonio.tcc \
+ /usr/include/c++/11/bits/locale_conv.h \
+ /usr/include/c++/11/bits/unique_ptr.h /usr/include/c++/11/utility \
+ /usr/include/c++/11/bits/stl_relops.h /usr/include/c++/11/tuple \
+ /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
+ /usr/include/c++/11/bits/invoke.h \
+ /usr/include/c++/11/bits/quoted_string.h /usr/include/c++/11/sstream \
+ /usr/include/c++/11/bits/sstream.tcc /tmp/tmp.OXzw5ZwGmP/Node.h \
+ /tmp/tmp.OXzw5ZwGmP/Weight.h /tmp/tmp.OXzw5ZwGmP/Cat.h

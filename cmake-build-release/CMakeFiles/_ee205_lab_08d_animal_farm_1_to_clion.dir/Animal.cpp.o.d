@@ -1,6 +1,6 @@
-CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Node.cpp.o: \
- /tmp/tmp.OXzw5ZwGmP/Node.cpp /usr/include/stdc-predef.h \
- /tmp/tmp.OXzw5ZwGmP/Node.h /usr/include/c++/11/iostream \
+CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Animal.cpp.o: \
+ /tmp/tmp.OXzw5ZwGmP/Animal.cpp /usr/include/stdc-predef.h \
+ /usr/include/c++/11/iostream \
  /usr/include/c++/11/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
  /usr/include/c++/11/x86_64-redhat-linux/bits/os_defines.h \
@@ -121,8 +121,9 @@ CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Node.cpp.o: \
  /usr/include/c++/11/bits/locale_facets.tcc \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
- /usr/include/c++/11/bits/istream.tcc /tmp/tmp.OXzw5ZwGmP/config.h \
- /usr/include/c++/11/iomanip /usr/include/c++/11/locale \
+ /usr/include/c++/11/bits/istream.tcc /tmp/tmp.OXzw5ZwGmP/Animal.h \
+ /tmp/tmp.OXzw5ZwGmP/config.h /usr/include/c++/11/iomanip \
+ /usr/include/c++/11/locale \
  /usr/include/c++/11/bits/locale_facets_nonio.h /usr/include/c++/11/ctime \
  /usr/include/c++/11/x86_64-redhat-linux/bits/time_members.h \
  /usr/include/c++/11/x86_64-redhat-linux/bits/messages_members.h \
@@ -134,4 +135,5 @@ CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Node.cpp.o: \
  /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
  /usr/include/c++/11/bits/invoke.h \
  /usr/include/c++/11/bits/quoted_string.h /usr/include/c++/11/sstream \
- /usr/include/c++/11/bits/sstream.tcc
+ /usr/include/c++/11/bits/sstream.tcc /tmp/tmp.OXzw5ZwGmP/Node.h \
+ /tmp/tmp.OXzw5ZwGmP/Weight.h

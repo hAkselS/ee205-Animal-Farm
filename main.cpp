@@ -43,7 +43,7 @@ int main(){
     cout << animalOne.getSpecies() << endl;
     animalOne.dump();
     cout << endl;
-    Weight catOne( 10 );
+    Weight catOne( Weight::POUND, 12 );
     catOne.dump();
 
     printf("  /\\_/\\  (\n");

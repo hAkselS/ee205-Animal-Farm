@@ -122,40 +122,10 @@
 		<Unit filename="/tmp/tmp.OXzw5ZwGmP/Weight.h">
 			<Option target="_ee205_lab_08d_animal_farm_1_to_clion"/>
 		</Unit>
-		<Unit filename="/tmp/tmp.OXzw5ZwGmP/addCats.cpp">
-			<Option target="_ee205_lab_08d_animal_farm_1_to_clion"/>
-		</Unit>
-		<Unit filename="/tmp/tmp.OXzw5ZwGmP/addCats.h">
-			<Option target="_ee205_lab_08d_animal_farm_1_to_clion"/>
-		</Unit>
-		<Unit filename="/tmp/tmp.OXzw5ZwGmP/catDatabase.cpp">
-			<Option target="_ee205_lab_08d_animal_farm_1_to_clion"/>
-		</Unit>
-		<Unit filename="/tmp/tmp.OXzw5ZwGmP/catDatabase.h">
-			<Option target="_ee205_lab_08d_animal_farm_1_to_clion"/>
-		</Unit>
 		<Unit filename="/tmp/tmp.OXzw5ZwGmP/config.h">
 			<Option target="_ee205_lab_08d_animal_farm_1_to_clion"/>
 		</Unit>
-		<Unit filename="/tmp/tmp.OXzw5ZwGmP/deleteCats.cpp">
-			<Option target="_ee205_lab_08d_animal_farm_1_to_clion"/>
-		</Unit>
-		<Unit filename="/tmp/tmp.OXzw5ZwGmP/deleteCats.h">
-			<Option target="_ee205_lab_08d_animal_farm_1_to_clion"/>
-		</Unit>
 		<Unit filename="/tmp/tmp.OXzw5ZwGmP/main.cpp">
-			<Option target="_ee205_lab_08d_animal_farm_1_to_clion"/>
-		</Unit>
-		<Unit filename="/tmp/tmp.OXzw5ZwGmP/reportCats.cpp">
-			<Option target="_ee205_lab_08d_animal_farm_1_to_clion"/>
-		</Unit>
-		<Unit filename="/tmp/tmp.OXzw5ZwGmP/reportCats.h">
-			<Option target="_ee205_lab_08d_animal_farm_1_to_clion"/>
-		</Unit>
-		<Unit filename="/tmp/tmp.OXzw5ZwGmP/updateCats.cpp">
-			<Option target="_ee205_lab_08d_animal_farm_1_to_clion"/>
-		</Unit>
-		<Unit filename="/tmp/tmp.OXzw5ZwGmP/updateCats.h">
 			<Option target="_ee205_lab_08d_animal_farm_1_to_clion"/>
 		</Unit>
 		<Unit filename="/tmp/tmp.OXzw5ZwGmP/CMakeLists.txt">

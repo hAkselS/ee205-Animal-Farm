@@ -297,78 +297,6 @@ Weight.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Weight.cpp.s
 .PHONY : Weight.cpp.s
 
-addCats.o: addCats.cpp.o
-.PHONY : addCats.o
-
-# target to build an object file
-addCats.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/addCats.cpp.o
-.PHONY : addCats.cpp.o
-
-addCats.i: addCats.cpp.i
-.PHONY : addCats.i
-
-# target to preprocess a source file
-addCats.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/addCats.cpp.i
-.PHONY : addCats.cpp.i
-
-addCats.s: addCats.cpp.s
-.PHONY : addCats.s
-
-# target to generate assembly for a file
-addCats.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/addCats.cpp.s
-.PHONY : addCats.cpp.s
-
-catDatabase.o: catDatabase.cpp.o
-.PHONY : catDatabase.o
-
-# target to build an object file
-catDatabase.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/catDatabase.cpp.o
-.PHONY : catDatabase.cpp.o
-
-catDatabase.i: catDatabase.cpp.i
-.PHONY : catDatabase.i
-
-# target to preprocess a source file
-catDatabase.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/catDatabase.cpp.i
-.PHONY : catDatabase.cpp.i
-
-catDatabase.s: catDatabase.cpp.s
-.PHONY : catDatabase.s
-
-# target to generate assembly for a file
-catDatabase.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/catDatabase.cpp.s
-.PHONY : catDatabase.cpp.s
-
-deleteCats.o: deleteCats.cpp.o
-.PHONY : deleteCats.o
-
-# target to build an object file
-deleteCats.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/deleteCats.cpp.o
-.PHONY : deleteCats.cpp.o
-
-deleteCats.i: deleteCats.cpp.i
-.PHONY : deleteCats.i
-
-# target to preprocess a source file
-deleteCats.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/deleteCats.cpp.i
-.PHONY : deleteCats.cpp.i
-
-deleteCats.s: deleteCats.cpp.s
-.PHONY : deleteCats.s
-
-# target to generate assembly for a file
-deleteCats.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/deleteCats.cpp.s
-.PHONY : deleteCats.cpp.s
-
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -392,54 +320,6 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/main.cpp.s
 .PHONY : main.cpp.s
-
-reportCats.o: reportCats.cpp.o
-.PHONY : reportCats.o
-
-# target to build an object file
-reportCats.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/reportCats.cpp.o
-.PHONY : reportCats.cpp.o
-
-reportCats.i: reportCats.cpp.i
-.PHONY : reportCats.i
-
-# target to preprocess a source file
-reportCats.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/reportCats.cpp.i
-.PHONY : reportCats.cpp.i
-
-reportCats.s: reportCats.cpp.s
-.PHONY : reportCats.s
-
-# target to generate assembly for a file
-reportCats.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/reportCats.cpp.s
-.PHONY : reportCats.cpp.s
-
-updateCats.o: updateCats.cpp.o
-.PHONY : updateCats.o
-
-# target to build an object file
-updateCats.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/updateCats.cpp.o
-.PHONY : updateCats.cpp.o
-
-updateCats.i: updateCats.cpp.i
-.PHONY : updateCats.i
-
-# target to preprocess a source file
-updateCats.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/updateCats.cpp.i
-.PHONY : updateCats.cpp.i
-
-updateCats.s: updateCats.cpp.s
-.PHONY : updateCats.s
-
-# target to generate assembly for a file
-updateCats.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/updateCats.cpp.s
-.PHONY : updateCats.cpp.s
 
 # Help Target
 help:
@@ -471,24 +351,9 @@ help:
 	@echo "... Weight.o"
 	@echo "... Weight.i"
 	@echo "... Weight.s"
-	@echo "... addCats.o"
-	@echo "... addCats.i"
-	@echo "... addCats.s"
-	@echo "... catDatabase.o"
-	@echo "... catDatabase.i"
-	@echo "... catDatabase.s"
-	@echo "... deleteCats.o"
-	@echo "... deleteCats.i"
-	@echo "... deleteCats.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... reportCats.o"
-	@echo "... reportCats.i"
-	@echo "... reportCats.s"
-	@echo "... updateCats.o"
-	@echo "... updateCats.i"
-	@echo "... updateCats.s"
 .PHONY : help
 
 
