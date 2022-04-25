@@ -21,8 +21,8 @@ protected:
     Node* next = nullptr;   ///store next pointer
 
         ///compare nodes
-    static bool compareByAddress ( const Node* node1, Node* node2 ){
-        if ( node1 > node1 ){
+    static bool compareByAddress ( const Node* node1, const Node* node2 ){
+        if ( node1 > node2 ){
             return true;
         }
         return false;
@@ -31,8 +31,8 @@ protected:
 public:
         ///virtual function for dump, declare the format
     virtual void dump() const {
-        FORMAT_LINE_FOR_DUMP( "Node", this ) << this << std::endl;
-        FORMAT_LINE_FOR_DUMP( "Node", next ) << next << std::endl;
+        FORMAT_LINE_FOR_DUMP( "Node", "this" ) << this << std::endl;
+        FORMAT_LINE_FOR_DUMP( "Node", "next" ) << next << std::endl;
     }
         ///basis of validate
     virtual bool validate() const {
@@ -41,7 +41,7 @@ public:
             return true;
         }
         if ( next == next->next ){
-            std::cout << "Node: validate: recursive loop detected" << std::endl;
+            std::cout << "Node: validate: infinite loop" << std::endl;
             return false;
         }
         return true;

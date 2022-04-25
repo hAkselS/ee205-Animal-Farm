@@ -18,12 +18,13 @@ protected:
     unsigned int count = 0;
 
     ///methods (public?)
-    ///empty()
-    ///unsigned int size(){
-    ///return count;
-    ///isIn(),
-    ///isSorted(),
-    ///pop_front(),
+    ///METHODS
+    bool empty() const;
+    unsigned int size() const;
+    bool isIn( Node* theNode ) const;
+
+    bool isSorted() const;
+    Node* get_first() const noexcept ;
     ///get_first(),
     ///get_next(),
     ///deleteAllNodes(), calls pop front

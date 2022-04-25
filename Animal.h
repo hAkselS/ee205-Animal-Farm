@@ -21,13 +21,13 @@ private:    ///private member variables
     string classification;
     Gender gender = Gender::UNKNOWN_GENDER;
     Breed breed = Breed::UNKNOWN_BREED;
-    Weight t_weight;
+    Weight weightClass;
 public:     ///public member variables
     static const string KINGDOM_NAME;
 
 public:     ///constructors
     ///minimal constructor
-    Animal( const float nexMaxWeight, const std::string newClassification, const std::string newSpecies  );
+    Animal( const t_weight nexMaxWeight, const std::string newClassification, const std::string newSpecies  );
     ///maximal constructor
     Animal ( const Gender newGender, const float newWeight, const float newMaxWeight,
              const std::string newClassification, const std::string newSpecies );

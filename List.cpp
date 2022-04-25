@@ -8,4 +8,20 @@
 /// @author  Aksel Sloan <@aksel@hawaii.edu>
 /// @date   21_Apr_2022
 ///////////////////////////////////////////////////////////////////////////////
+#include "config.h"
 #include "List.h"
+
+
+        ///check if list is empty
+bool List::empty() const {
+    if ( headPtr == nullptr ){
+        return true;
+    }
+    return false;
+}
+
+unsigned int List::size() const {
+    return count;
+}
+
+

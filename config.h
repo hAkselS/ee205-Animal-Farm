@@ -29,20 +29,7 @@ enum class          Breed  {UNKNOWN_BREED, MAINE_COON, MANX, SHORTHAIR, PERSIAN,
 enum class          Color  {BLACK, WHITE, RED, BLUE, GREEN, PINK};
 
 ///put to operators
-//@todo, how should I deal with this?
-/*std::ostream& operator<<( std::ostream& lhs_stream
-        ,const Gender rhs_UnitOfMeasure ) {
-    switch (rhs_UnitOfMeasure) {
-        case Gender::UNKNOWN_GENDER:
-            return lhs_stream << Gender::UNKNOWN_GENDER; //@todo this will be a number
-        case Gender::MALE:
-            return lhs_stream << Gender::MALE;
-        case Gender::FEMALE:
-            return lhs_stream << Gender::FEMALE;
-        default:
-            throw std::out_of_range("The unit can’t be mapped to a string");
-    }
-}*/
+
 
 
 //printing macros

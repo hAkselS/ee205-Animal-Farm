@@ -15,8 +15,9 @@
 const std::string Animal::KINGDOM_NAME = "Animalia";
         ///constructors
         ///minimal
-Animal::Animal(const float newMaxWeight, std::string const newClassification, const std::string newSpecies)/* : Weight(Weight::POUND, newMaxWeight )*/ { //use unit / max constructor
+Animal::Animal(const t_weight newMaxWeight, std::string const newClassification, const std::string newSpecies) { //use unit / max constructor
     //@todo validation and fixing weight constructor
+    //Weight::setMaxWeight( newMaxWeight );
     classification = newClassification;
     species = newSpecies;
 
@@ -58,5 +59,21 @@ void Animal::dump() const {
 
 }
 
+            ///put to operator
+//how should I deal with this? seems like only one definition of put to operator per cpp
+//if in .h it will redefine each time .h file is included and give error!
+std::ostream& operator<<( std::ostream& lhs_stream
+        ,const Gender rhs_UnitOfMeasure ) {
+    switch (rhs_UnitOfMeasure) {
+        case Gender::UNKNOWN_GENDER:
+            return lhs_stream << Gender::UNKNOWN_GENDER;
+        case Gender::MALE:
+            return lhs_stream << Gender::MALE;
+        case Gender::FEMALE:
+            return lhs_stream << Gender::FEMALE;
+        default:
+            throw std::out_of_range("The unit can’t be mapped to a string");
+    }
+}
 
 

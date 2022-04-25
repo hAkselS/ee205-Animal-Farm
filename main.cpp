@@ -34,6 +34,7 @@ using namespace std;
 
 int main(){
     cout << "Starting Animal Farm 3" << endl;
+
     ///sparatic testing
     Animal animalOne ( 42, "cattus", "fattus" );
     ///test getters
@@ -42,6 +43,8 @@ int main(){
     cout << animalOne.getSpecies() << endl;
     animalOne.dump();
     cout << endl;
+    Weight catOne( 10 );
+    catOne.dump();
 
     printf("  /\\_/\\  (\n");
     printf(" ( ^.^ ) _)\n");
