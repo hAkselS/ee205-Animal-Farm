@@ -37,7 +37,7 @@ int main(){
 
     ///sparatic testing
     cout << "make animalOne" << endl;
-    Animal animalOne ( 42, "cattus", "fattus" );
+    Animal animalOne ( 42.01, "cattus", "fattus" );
     ///test getters
     cout << animalOne.getKingdom() << endl;
     cout << animalOne.getClassification() << endl;
@@ -48,7 +48,14 @@ int main(){
     cout << "make animalTwo" << endl;
     Animal animalTwo ( Gender::MALE, 10, 12, "doggus", "loggus");
     animalTwo.dump();
+    cout << endl;
 
+    cout << "make animalThree" << endl;
+    Animal animalThree ( Gender::FEMALE, 13, 14, "chungus", "bungus");
+    animalThree.dump();
+
+    cout << "dump animalOne again" << endl;
+    animalOne.dump();
 
     printf("  /\\_/\\  (\n");
     printf(" ( ^.^ ) _)\n");

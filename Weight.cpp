@@ -220,7 +220,7 @@ void Weight::setWeight( float newWeight, Weight::UnitOfMeasure weightUnits) {
 void Weight::setMaxWeight(const float newMaxWeight) {
     ///max weight is always stored in POUNDS
     if ( !bHasMax ){
-        if (isWeightValid( newMaxWeight)) {
+        if ( newMaxWeight > 0 ) {
             maxWeight = newMaxWeight;
             bHasMax = true;
         }
@@ -314,7 +314,7 @@ bool Weight::isWeightValid(const float inputWeight) const noexcept {
     if ( bHasMax ){
         //cout << "isWeightValid: bHasMax == true, maxWeight = " << maxWeight << endl;
         if ( inputWeight >= maxWeight ){
-            //cout << inputWeight << " is greater than " << maxWeight << endl;
+            cout << inputWeight << " is greater than " << maxWeight << endl;
             cout << "isWeightValid: weight must be less than max weight" << endl;
             return false;
         }

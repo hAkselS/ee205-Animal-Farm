@@ -9,6 +9,7 @@
 /// @date   21_Apr_2022
 ///////////////////////////////////////////////////////////////////////////////
 #include <iostream>
+#include <cassert>
 #include "Animal.h"
 #include "Weight.h"
 
@@ -26,7 +27,7 @@ Animal::Animal(const t_weight newMaxWeight, std::string const newClassification,
 Animal::Animal(const Gender newGender, const float newWeight, const float newMaxWeight,
                const std::string newClassification, const std::string newSpecies)
                : Animal( newMaxWeight ,newClassification, newSpecies ){
-    weightClass.setWeight( newWeight );
+    weightClass.setWeight( newWeight, Weight::POUND );
     gender = newGender;
 }
 
@@ -44,10 +45,13 @@ std::string Animal::getSpecies() const noexcept {
     return species;
 }
 
-Gender Animal::getGender() const noexcept {
+Gender Animal::getGender() const noexcept { //@todo, get this working (more specifically the put to operator)
     return gender;
 }
 
+
+
+            ///dump
 void Animal::dump() const {
     cout << setw(80) << setfill( '=' ) << "" << endl ;
     cout << setfill( ' ' ) ;
@@ -62,7 +66,14 @@ void Animal::dump() const {
 
 }
 
-            ///put to operator
+bool Animal::setClassification(std::string newClassification) {
+    assert( !newClassification.empty());
+    return true;
+}
+
+
+
+///put to operator
 //how should I deal with this? seems like only one definition of put to operator per cpp
 
 /// Output Gender as a formatted string

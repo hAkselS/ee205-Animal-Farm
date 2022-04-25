@@ -16,12 +16,12 @@
 
 using namespace std;
 class Animal : public Node {
+
 private:    ///private member variables
     string species;
     string classification;
     Gender gender = Gender::UNKNOWN_GENDER;
-    Breed breed = Breed::UNKNOWN_BREED;
-    Weight weightClass; //@todo, this instantiates
+    Weight weightClass;
 public:     ///public member variables
     static const string KINGDOM_NAME;
 
@@ -36,10 +36,11 @@ public:     ///getters
     std::string getKingdom() const noexcept;
     std::string getClassification() const noexcept;
     std::string getSpecies() const noexcept;
-
     Gender getGender() const noexcept;
-/*Weight::t_weight getWeight() const noexcept;
-void setWeight( const Weight::t_weight newWeight );*/
+    //t_weight getWeight() const; ALREADY IN WEIGHT CLASS
+
+protected:  ///setters
+    bool setClassification ( std::string newClassification);
 
 public:
     void dump()const;
