@@ -24,17 +24,30 @@ protected:     ///protected member variables
 
 public:       ///constructors
     Cat( const string newName) : Mammal( MAX_WEIGHT, SPECIES_NAME ){
-        assert( !newName.empty() );
-        catName = newName;
+        setCatName( newName);
         isCatFixed = false;
     };
 
-    Cat( const string newName, const Color newColor, bool stateOfFix, Gender newGender, const t_weight newWeight)
-            : Mammal( newColor, newGender, newWeight, MAX_WEIGHT, SPECIES_NAME ) {
-        assert( !newName.empty() );
-        catName = newName;
+    Cat( const string newName, const Color newColor, bool stateOfFix,
+         Gender newGender, const t_weight newWeight)
+            : Mammal( newColor, newGender, newWeight,
+              MAX_WEIGHT, SPECIES_NAME ) {
+        setCatName( newName );
         isCatFixed = stateOfFix;
     };
 
+public:     ///getters and setters
+    string getCatName() const;
+    void setCatName( string newName );
+
+    bool isFixedCheck() const;
+    void fixCat();
+
+
+public:     ///validation
+    bool validateName ( string newName );
+
+public:     ///public methods
+    void dump() const noexcept override;
 
 };

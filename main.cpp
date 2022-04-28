@@ -73,7 +73,11 @@ int main(){
 
      cout << "create some cats" << endl;
      Cat catOne ( "chilibean");
-     //Cat catTwo ( )
+     Cat catTwo ( "chilean minors", Color::PINK, true, Gender::MALE, 24);
+
+     cout << "dump the cats" << endl;
+     catOne.dump();
+     catTwo.dump();
 
      SinglyLinkedList catDB ;
 

@@ -25,5 +25,37 @@ const string Cat::SPECIES_NAME = "Felus Catus";
 const t_weight Cat::MAX_WEIGHT = 25;
 
 
+            ///getters and setter
+string Cat::getCatName() const {
+    return catName;
+}
+
+void Cat::setCatName( string newName ) {
+    validateName(newName);
+    catName = newName;
+
+}
+
+bool Cat::validateName(string newName) {
+    assert( !newName.empty() );
+    return true;
+}
+
+bool Cat::isFixedCheck() const {
+    return isCatFixed;
+}
+
+void Cat::fixCat() {
+    assert( !isCatFixed );
+    isCatFixed = true;
+}
+
+void Cat::dump() const noexcept {
+    Mammal::dump();
+    FORMAT_LINE_FOR_DUMP( "Cat", "name") << getCatName() << std::endl;
+    FORMAT_LINE_FOR_DUMP( "Cat", "is fixed") << isCatFixed << std::endl;
+}
+
+
 
 
