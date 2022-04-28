@@ -23,7 +23,21 @@ public:         ///constructors
     Mammal( const t_weight newMaxWeight, const std::string newSpecies )
     : Animal( newMaxWeight, MAMMAL_NAME, newSpecies ) {};
 
+    Mammal( const Color             newColor
+          ,const Gender             newGender
+          ,const t_weight           newWeight
+          ,const t_weight           newMaxWeight
+          ,const std::string&       newSpecies
+       ) : Animal( newGender, newWeight, newMaxWeight, MAMMAL_NAME, newSpecies ) {
+        setColor( newColor );
+    };
 
+                ///getters & setter
+    void setColor( const Color newColor ) noexcept { color = newColor; }
+    Color getColor ();Color getColor() const noexcept { return color; }
+
+    ///public methods
+    void dump() const noexcept override;
 };
 
 

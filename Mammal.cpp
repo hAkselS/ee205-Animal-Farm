@@ -10,5 +10,12 @@
 ///////////////////////////////////////////////////////////////////////////////
 #include "Mammal.h"
 
-const std::string 	MAMMAL_NAME = "Mammilian";
+const std::string Mammal::MAMMAL_NAME = "Mammilian";
+
+
+
+void Mammal::dump() const noexcept {
+    Animal::dump();
+    FORMAT_LINE_FOR_DUMP( "Mammal", "color" ) << getColor() << std::endl;
+}
 

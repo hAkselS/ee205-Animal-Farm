@@ -24,7 +24,7 @@ Animal::Animal(const t_weight newMaxWeight, std::string const newClassification,
 
 }
 
-Animal::Animal(const Gender newGender, const float newWeight, const float newMaxWeight,
+Animal::Animal(const Gender newGender, const t_weight newWeight, const t_weight newMaxWeight,
                const std::string newClassification, const std::string newSpecies)
                : Animal( newMaxWeight ,newClassification, newSpecies ){
     weightClass.setWeight( newWeight, Weight::POUND );

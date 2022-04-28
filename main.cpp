@@ -27,6 +27,7 @@
 #include "Cat.h"
 #include "Weight.h"
 #include "SinglyLinkedList.h"
+#include "Mammal.h"
 
 #define DEBUG
 
@@ -57,11 +58,18 @@ int main(){
      Animal animalThree ( Gender::FEMALE, 13, 14, "chungus", "bungus");
      animalThree.dump(); //@todo, out of 14 pounds is far right
 
+     cout << "make mammalOne" << endl;
+     Mammal mammalOne ( 21.4, "chad" );
 
 
+     cout << "make mammalTwo" << endl;
+     Mammal mammalTwo ( Color::RED, Gender::MALE, 96.9, 100, "lad" );
 
+     cout << "dump the mammals" << endl;
+     mammalOne.dump();
+     mammalTwo.dump();
 
-   SinglyLinkedList catDB ;
+     SinglyLinkedList catDB ;
 
 
 
