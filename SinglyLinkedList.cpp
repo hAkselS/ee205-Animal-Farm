@@ -51,10 +51,9 @@ void SinglyLinkedList::dump() const {
     std::cout << "SinglyLinkedList: head=[" << headPtr << "]" << std::endl;
     if( headPtr != nullptr ){
         Node* iterationNode = headPtr;
-        for( int i = 0; i <= count ; i++ ){
+        for(int i = 0; i < count ; i++){
             iterationNode->dump();
             iterationNode = iterationNode->next;
-            i++;
         }
     }
 }

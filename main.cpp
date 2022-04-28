@@ -52,9 +52,9 @@ int main(){
      catDB.push_front( new Cat( "Loki",  Color::CREAM, true,  Gender::MALE,   1.0 ));
      catDB.push_front( new Cat( "Milo",  Color::BLACK, true,  Gender::MALE,   1.1 ) );
      catDB.push_front( new Cat( "Bella", Color::BROWN, true,  Gender::FEMALE, 1.2 ) ) ;
-     catDB.pop_front();
-     catDB.pop_front();
-     catDB.pop_front();
+     cout << "count =" << catDB.count << endl;
+     catDB.dump();
+     catDB.deleteAllNodes();
 
      catDB.dump();
 

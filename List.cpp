@@ -10,6 +10,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 #include "config.h"
 #include "List.h"
+#include <cassert>
 
         ///get next
 Node *List::get_next(const Node *currentNode) {
@@ -46,6 +47,12 @@ bool List::isIn(Node *theNode) const {
             ///get first
 Node *List::get_first() const noexcept {
     return headPtr;
+}
+            ///delete all nodes
+void List::deleteAllNodes() {
+    while( headPtr != nullptr ) {
+        pop_front();
+    }
 }
 
 

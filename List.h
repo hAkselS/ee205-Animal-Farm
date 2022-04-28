@@ -15,6 +15,7 @@ class List: public Node {
 protected:
     ///MEMBER VARIABLES
     Node* headPtr = nullptr;
+public: //todo, undo this public
     unsigned int count = 0;
 public:
     static Node* get_next( const Node* currentNode );
@@ -26,7 +27,7 @@ public:
     // bool isSorted() const; //@todo, write operator and manage is sorted
     Node* get_first() const noexcept;
 
-    //void deleteAllNodes(); //@todo, once pop front is done
+    void deleteAllNodes();
 
     ///VIRTUAL FUNCTIONS
     virtual Node* pop_front() = 0;
