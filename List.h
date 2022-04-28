@@ -12,7 +12,7 @@
 #define _EE205_LAB_08D_ANIMAL_FARM_1_TO_CLION_LIST_H
 #include "Node.h"
 
-class List {
+class List: public Node {
 protected:
     ///MEMBER VARIABLES
     Node* headPtr = nullptr;
@@ -24,14 +24,14 @@ protected:
     unsigned int size() const;
     bool isIn( Node* theNode ) const;
 
-    bool isSorted() const;
+   /* bool isSorted() const;
     Node* get_first() const noexcept;
-    void deleteAllNodes();
+    void deleteAllNodes();*/
 
     ///VIRTUAL FUNCTIONS
-    virtual Node* pop_front() noexcept = 0;
-    virtual void dump() const noexcept = 0;
-    virtual bool validate() const noexcept = 0;
+    /*virtual Node* pop_front() = 0;
+    virtual void dump() const = 0;
+    virtual bool validate() const = 0 ;*/
 
 };
 

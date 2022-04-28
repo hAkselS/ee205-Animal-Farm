@@ -6,6 +6,28 @@
 /// @version 1.0
 ///
 /// @author  Aksel Sloan <@aksel@hawaii.edu>
-/// @date   21_Apr_2022
+/// @date   27_Apr_2022
 ///////////////////////////////////////////////////////////////////////////////
 #include "SinglyLinkedList.h"
+
+SinglyLinkedList::SinglyLinkedList() {}
+
+void SinglyLinkedList::push_front(Node *newNode) {
+    ///validate
+    ///case: non-empty list
+    if ( headPtr != nullptr ){
+        newNode->next = headPtr;
+        headPtr = newNode;
+    }
+    ///case: empty list
+    if ( headPtr == nullptr ){
+        newNode->next = nullptr;
+        headPtr = newNode;
+    }
+    else{
+        std::cout << PROGRAM_NAME << ": push_front: list neither empty nor non-empty" << std::endl;
+    }
+    count ++;
+}
+
+

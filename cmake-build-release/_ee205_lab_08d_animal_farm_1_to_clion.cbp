@@ -110,6 +110,12 @@
 		<Unit filename="/tmp/tmp.OXzw5ZwGmP/Node.h">
 			<Option target="_ee205_lab_08d_animal_farm_1_to_clion"/>
 		</Unit>
+		<Unit filename="/tmp/tmp.OXzw5ZwGmP/SingleLinkedList.cpp">
+			<Option target="_ee205_lab_08d_animal_farm_1_to_clion"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.OXzw5ZwGmP/SingleLinkedList.h">
+			<Option target="_ee205_lab_08d_animal_farm_1_to_clion"/>
+		</Unit>
 		<Unit filename="/tmp/tmp.OXzw5ZwGmP/SinglyLinkedList.cpp">
 			<Option target="_ee205_lab_08d_animal_farm_1_to_clion"/>
 		</Unit>
