@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Mammal.cpp.o.d"
   "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Node.cpp.o"
   "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Node.cpp.o.d"
+  "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/SingleLinkedList.cpp.o"
+  "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/SingleLinkedList.cpp.o.d"
   "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/SinglyLinkedList.cpp.o"
   "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/SinglyLinkedList.cpp.o.d"
   "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Weight.cpp.o"

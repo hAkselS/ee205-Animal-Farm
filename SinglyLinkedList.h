@@ -6,15 +6,29 @@
 /// @version 1.0
 ///
 /// @author  Aksel Sloan <@aksel@hawaii.edu>
-/// @date   21_Apr_2022
+/// @date   27_Apr_2022
 ///////////////////////////////////////////////////////////////////////////////
-#ifndef _EE205_LAB_08D_ANIMAL_FARM_1_TO_CLION_SINGLYLINKEDLIST_H
-#define _EE205_LAB_08D_ANIMAL_FARM_1_TO_CLION_SINGLYLINKEDLIST_H
+#pragma once
+#include "List.h"
+#include "Node.h"
 
 
-class SinglyLinkedList {
+class SinglyLinkedList : public List {
+public:
+    ///constructor
+    SinglyLinkedList();
+
+    ///PUBLIC METHODS
+    void push_front( Node* newNode );
+    /*Node* pop_front() override; /// return first node in singly linked list and remove it from the list
+
+    void insert_after( Node* currentNode, Node* newNode );
+    void dump() const override;
+    bool validate() const override;*/
+
+
 
 };
 
 
-#endif //_EE205_LAB_08D_ANIMAL_FARM_1_TO_CLION_SINGLYLINKEDLIST_H
+

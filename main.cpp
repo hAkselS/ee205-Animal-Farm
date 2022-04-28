@@ -26,6 +26,7 @@
 #include "Animal.h"
 #include "Cat.h"
 #include "Weight.h"
+#include "SinglyLinkedList.h"
 
 #define DEBUG
 
@@ -33,9 +34,9 @@ using namespace std;
 
 
 int main(){
-    cout << "Starting Animal Farm 3" << endl;
+    cout << "Starting " << PROGRAM_NAME << endl ;
 
-    ///sparatic testing
+   /* ///animal class testing
     cout << "make animalOne" << endl;
     Animal animalOne ( 42.01, "cattus", "fattus" );
     ///test getters
@@ -43,7 +44,7 @@ int main(){
     cout << animalOne.getClassification() << endl;
     cout << animalOne.getSpecies() << endl;
     animalOne.validateAnimal();
-    animalOne.dump(); //@todo, sometimes things don't get set, other times they do???
+    animalOne.dump(); /
     cout << endl;
 
     cout << "make animalTwo" << endl;
@@ -53,10 +54,13 @@ int main(){
 
     cout << "make animalThree" << endl;
     Animal animalThree ( Gender::FEMALE, 13, 14, "chungus", "bungus");
-    animalThree.dump();
+    animalThree.dump();*/
 
-    //cout << "bad animal" << endl;
-    //Animal badAnimal ( Gender:: UNKNOWN_GENDER, 1, 1.1, "", "" );
+
+
+   SinglyLinkedList catDB ;
+
+
 
 
 
@@ -66,7 +70,7 @@ int main(){
     printf(" ( | | )\n");
     printf("(__d b__)\n");
 
-    cout << "Finished with Animal Farm 3" << endl;
+    cout << "Finished with " << PROGRAM_NAME << endl;
 
 }
 ///how do assert something or make a test that doesn't output its result???
