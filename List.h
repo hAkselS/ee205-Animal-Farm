@@ -15,7 +15,6 @@ class List: public Node {
 protected:
     ///MEMBER VARIABLES
     Node* headPtr = nullptr;
-public: //todo, undo this public
     unsigned int count = 0;
 public:
     static Node* get_next( const Node* currentNode );

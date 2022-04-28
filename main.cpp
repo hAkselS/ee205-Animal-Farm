@@ -39,28 +39,23 @@ int main(){
 
      //NOW THAT MAMMAL AND ANIMAL HAVE AN ABSTRACT METHOD THEY CAN NO LONGER BE INSTANTIATED
 
-     /*cout << "create some cats" << endl;
-     Cat catOne ( "chilibean");
-     Cat catTwo ( "chilean minors", Color::PINK, true, Gender::MALE, 24);
-
-     cout << "dump the cats" << endl;
-     catOne.dump();
-     catTwo.dump();
-     cout << catOne.speak() << endl;*/
-
      SinglyLinkedList catDB;
+
      catDB.push_front( new Cat( "Loki",  Color::CREAM, true,  Gender::MALE,   1.0 ));
      catDB.push_front( new Cat( "Milo",  Color::BLACK, true,  Gender::MALE,   1.1 ) );
      catDB.push_front( new Cat( "Bella", Color::BROWN, true,  Gender::FEMALE, 1.2 ) ) ;
-     cout << "count =" << catDB.count << endl;
+     catDB.push_front( new Cat( "Kali",  Color::CALICO, true, Gender::FEMALE, 1.3 ) ) ;
+     catDB.push_front( new Cat( "Trin",  Color::WHITE, true,  Gender::FEMALE, 1.4 ) ) ;
+
+     catDB.insert_after(catDB.get_first(), new Cat( "Chili",Color::GINGER, true,Gender::MALE,   1.5 ) );
+
+     for( Animal* pAnimal = (Animal*)catDB.get_first() ; pAnimal != nullptr ; pAnimal = (Animal*)List::get_next( (Node*)pAnimal ) ) {
+        cout << pAnimal->speak() << endl;
+     }
+     catDB.validate();
      catDB.dump();
      catDB.deleteAllNodes();
-
      catDB.dump();
-
-
-
-
 
     printf("  /\\_/\\  (\n");
     printf(" ( ^.^ ) _)\n");
@@ -69,7 +64,7 @@ int main(){
     printf("(__d b__)\n");
 
     cout << "Done with " << PROGRAM_NAME << endl;
-
+    return( EXIT_SUCCESS ) ;
 }
 
 

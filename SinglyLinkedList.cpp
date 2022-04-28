@@ -11,6 +11,7 @@
 #include "cassert"
 #include "SinglyLinkedList.h"
 #include "Cat.h"
+#include "Animal.h"
             ///constructor
 SinglyLinkedList::SinglyLinkedList() {}
 
@@ -60,8 +61,23 @@ void SinglyLinkedList::dump() const {
 
             ///validate
 bool SinglyLinkedList::validate() const {
-    assert( validate()) ;
+    if( headPtr != nullptr ){
+        Node* iterationNode = headPtr;
+        for( int i = 0; i < size(); i++ ){
+            iterationNode->validate();
+            iterationNode = iterationNode->next;
+        }
+    }
     return true;
+}
+
+void SinglyLinkedList::insert_after(Node *currentNode, Node *newNode) {
+    assert( validate() );
+    assert( newNode != nullptr );
+    assert( currentNode != nullptr ); //cannot insert after head!
+    newNode->next = currentNode->next;
+    currentNode->next = newNode;
+    count ++;
 }
 
 

@@ -57,7 +57,7 @@ void Cat::dump() const noexcept {
 }
 
 string Cat::speak() const {
-    return "meow";
+    return "Meow";
 }
 
 

@@ -50,7 +50,7 @@ Node *List::get_first() const noexcept {
 }
             ///delete all nodes
 void List::deleteAllNodes() {
-    while( headPtr != nullptr ) {
+    while( !isEmpty() ) {
         pop_front();
     }
 }

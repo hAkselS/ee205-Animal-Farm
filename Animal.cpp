@@ -61,10 +61,12 @@ void Animal::dump() const {
     cout << setfill( ' ' ) ;
     cout << left ;
     cout << boolalpha ;
-    FORMAT_LINE_FOR_DUMP( "Animal", "this" )        << this                 << endl;
+    FORMAT_LINE_FOR_DUMP( "Node", "this" )        << this                 << endl;
+    FORMAT_LINE_FOR_DUMP( "Node", "next" )        << this->next                 << endl;
+    FORMAT_LINE_FOR_DUMP( "Animal", "next" )        << this                 << endl;
     FORMAT_LINE_FOR_DUMP( "Animal", "kingdom" )        << getKingdom()                 << endl;
     FORMAT_LINE_FOR_DUMP( "Animal", "classification" )        << getClassification()                 << endl;
-    FORMAT_LINE_FOR_DUMP( "Animal", "species" )        << getSpecies()                 << endl; //@todo, ask mark about this
+    FORMAT_LINE_FOR_DUMP( "Animal", "species" )        << getSpecies()                 << endl;
     FORMAT_LINE_FOR_DUMP( "Animal", "gender" )        << getGender()                << endl;
     std::cout << "Animal  weight              " << weightClass.getWeight() << " out of " << weightClass.getMaxWeight() << " " << weightClass.getUnits() << std::endl;
 }
