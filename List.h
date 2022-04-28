@@ -8,8 +8,7 @@
 /// @author  Aksel Sloan <@aksel@hawaii.edu>
 /// @date   21_Apr_2022
 ///////////////////////////////////////////////////////////////////////////////
-#ifndef _EE205_LAB_08D_ANIMAL_FARM_1_TO_CLION_LIST_H
-#define _EE205_LAB_08D_ANIMAL_FARM_1_TO_CLION_LIST_H
+#pragma once
 #include "Node.h"
 
 class List: public Node {
@@ -17,16 +16,17 @@ protected:
     ///MEMBER VARIABLES
     Node* headPtr = nullptr;
     unsigned int count = 0;
-
-
+public:
+    static Node* get_next( const Node* currentNode );
+public:
     ///METHODS
     bool isEmpty() const;
     unsigned int size() const;
     bool isIn( Node* theNode ) const;
-
-   /* bool isSorted() const;
+    // bool isSorted() const; //@todo, write operator and manage is sorted
     Node* get_first() const noexcept;
-    void deleteAllNodes();*/
+
+    //void deleteAllNodes(); //@todo, once pop front is done
 
     ///VIRTUAL FUNCTIONS
     /*virtual Node* pop_front() = 0;
@@ -35,5 +35,3 @@ protected:
 
 };
 
-
-#endif //_EE205_LAB_08D_ANIMAL_FARM_1_TO_CLION_LIST_H

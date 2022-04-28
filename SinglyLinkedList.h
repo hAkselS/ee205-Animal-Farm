@@ -22,9 +22,9 @@ public:
     void push_front( Node* newNode );
     /*Node* pop_front() override; /// return first node in singly linked list and remove it from the list
 
-    void insert_after( Node* currentNode, Node* newNode );
+    void insert_after( Node* currentNode, Node* newNode );*/
     void dump() const override;
-    bool validate() const override;*/
+    //bool validate() const override;
 
 
 

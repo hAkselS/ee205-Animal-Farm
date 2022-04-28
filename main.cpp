@@ -39,16 +39,18 @@ int main(){
 
      //NOW THAT MAMMAL AND ANIMAL HAVE AN ABSTRACT METHOD THEY CAN NO LONGER BE INSTANTIATED
 
-     cout << "create some cats" << endl;
+     /*cout << "create some cats" << endl;
      Cat catOne ( "chilibean");
      Cat catTwo ( "chilean minors", Color::PINK, true, Gender::MALE, 24);
 
      cout << "dump the cats" << endl;
      catOne.dump();
      catTwo.dump();
-     cout << catOne.speak() << endl;
+     cout << catOne.speak() << endl;*/
 
-     SinglyLinkedList catDB ;
+     SinglyLinkedList catDB;
+     catDB.push_front( new Cat( "Loki",  Color::CREAM, true,  Gender::MALE,   1.0 ));
+     catDB.dump();
 
 
 

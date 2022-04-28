@@ -11,6 +11,10 @@
 #include "config.h"
 #include "List.h"
 
+        ///get next
+Node *List::get_next(const Node *currentNode) {
+    return currentNode->next;
+}
 
         ///check if list is empty
 bool List::isEmpty() const {
@@ -19,11 +23,11 @@ bool List::isEmpty() const {
     }
     return false;
 }
-
+        ///find the size of the list
 unsigned int List::size() const {
     return count;
 }
-
+        ///check if a node is in the list
 bool List::isIn(Node *theNode) const {
     if( theNode == nullptr ){
         std::cout << PROGRAM_NAME << ": isIn: cannot search for null pointer" << std::endl;
@@ -38,5 +42,12 @@ bool List::isIn(Node *theNode) const {
     }
     return false;
 }
+
+            ///get first
+Node *List::get_first() const noexcept {
+    return headPtr;
+}
+
+
 
 
