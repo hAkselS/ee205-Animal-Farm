@@ -11,8 +11,18 @@
 #pragma once
 #include "Animal.h"
 #include "config.h"
+#include "Color.h"
+#include "Weight.h"
 
 class Mammal : public Animal {
+public:
+    static const std::string MAMMAL_NAME;
+protected:      ///member variables
+    Color color = Color::UNKNOWN_COLOR;
+public:         ///constructors
+    Mammal( const t_weight newMaxWeight, const std::string newSpecies )
+    : Animal( newMaxWeight, MAMMAL_NAME, newSpecies ) {};
+
 
 };
 
