@@ -66,11 +66,10 @@ void Animal::dump() const {
     FORMAT_LINE_FOR_DUMP( "Animal", "classification" )        << getClassification()                 << endl;
     FORMAT_LINE_FOR_DUMP( "Animal", "species" )        << getSpecies()                 << endl; //@todo, ask mark about this
     FORMAT_LINE_FOR_DUMP( "Animal", "gender" )        << getGender()                << endl;
-    FORMAT_LINE_FOR_DUMP( "Animal", "weight" )    << weightClass.getWeight()  << " out of " << weightClass.getMaxWeight() << " " << weightClass.getUnits() << endl;
-
+    std::cout << "Animal  weight              " << weightClass.getWeight() << " out of " << weightClass.getMaxWeight() << " " << weightClass.getUnits() << std::endl;
 }
 
-bool Animal::validateAnimal() const {
+bool Animal::validate() const {
     assert( !classification.empty() );
     assert( !species.empty() );
     if ( weightClass.bIsKnown ){

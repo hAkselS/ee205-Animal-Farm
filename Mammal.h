@@ -38,6 +38,7 @@ public:         ///constructors
 
     ///public methods
     void dump() const noexcept override;
+    bool validate() const noexcept override;
 };
 
 

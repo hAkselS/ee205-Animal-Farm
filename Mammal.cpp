@@ -19,3 +19,7 @@ void Mammal::dump() const noexcept {
     FORMAT_LINE_FOR_DUMP( "Mammal", "color" ) << getColor() << std::endl;
 }
 
+bool Mammal::validate() const noexcept {
+    return Animal::validate();
+}
+

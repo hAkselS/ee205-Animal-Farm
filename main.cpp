@@ -44,7 +44,7 @@ int main(){
      cout << animalOne.getKingdom() << endl;
      cout << animalOne.getClassification() << endl;
      cout << animalOne.getSpecies() << endl;
-     animalOne.validateAnimal();
+     animalOne.validate();
      animalOne.dump(); /
      cout << endl;
 
@@ -56,6 +56,7 @@ int main(){
 
      cout << "make animalThree" << endl;
      Animal animalThree ( Gender::FEMALE, 13, 14, "chungus", "bungus");
+    animalThree.validate();
      animalThree.dump(); //@todo, out of 14 pounds is far right
 
      cout << "make mammalOne" << endl;
@@ -64,6 +65,7 @@ int main(){
 
      cout << "make mammalTwo" << endl;
      Mammal mammalTwo ( Color::RED, Gender::MALE, 96.9, 100, "lad" );
+     mammalTwo.validate();
 
      cout << "dump the mammals" << endl;
      mammalOne.dump();

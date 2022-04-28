@@ -48,7 +48,7 @@ public:     ///abstract methods
 
 public:
     void dump()const;
-    bool validateAnimal() const;
+    bool validate() const;
 };
 
 inline std::ostream& operator<<( std::ostream& lhs_stream, const Gender& rhs_Gender ) {
