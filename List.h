@@ -29,9 +29,9 @@ public:
     //void deleteAllNodes(); //@todo, once pop front is done
 
     ///VIRTUAL FUNCTIONS
-    /*virtual Node* pop_front() = 0;
+    virtual Node* pop_front() = 0;
     virtual void dump() const = 0;
-    virtual bool validate() const = 0 ;*/
+    virtual bool validate() const = 0 ;
 
 };
 
