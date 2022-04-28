@@ -23,7 +23,8 @@ enum class  	Color {
     GINGER,
     CREAM,
     CINNAMON,
-    CALICO
+    CALICO,
+    PINK
 };
 
 

@@ -16,8 +16,6 @@ typedef float t_weight; //refactor to t_weight
 typedef int NumCats;
 
 //defines
-#define MAX_NAME_LEN 20
-#define MAX_CATS 1024
 #define UNKNOWN_WEIGHT -1
 
 #define PROGRAM_NAME "Animal Farm 3"
@@ -26,6 +24,7 @@ typedef int NumCats;
 //declare enums
 enum class          Gender {UNKNOWN_GENDER, FEMALE, MALE};
 enum class          Breed  {UNKNOWN_BREED, MAINE_COON, MANX, SHORTHAIR, PERSIAN, SPHYNX};
+
 
 
 
