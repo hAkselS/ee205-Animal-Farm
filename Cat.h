@@ -49,5 +49,7 @@ public:     ///validation
 
 public:     ///public methods
     void dump() const noexcept override;
+    string speak() const override;
+
 
 };

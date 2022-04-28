@@ -34,11 +34,14 @@ public:         ///constructors
 
                 ///getters & setter
     void setColor( const Color newColor ) noexcept { color = newColor; }
-    Color getColor ();Color getColor() const noexcept { return color; }
+    Color getColor() const noexcept { return color; }
 
     ///public methods
     void dump() const noexcept override;
     bool validate() const noexcept override;
+
+    ///abstract methods
+    virtual string speak() const override = 0;
 };
 
 

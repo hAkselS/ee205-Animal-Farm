@@ -44,7 +44,7 @@ protected:  ///setters
     ///you can add more here
 
 public:     ///abstract methods
-    //virtual std::string speak() const; ///@todo, ask mark about this. gives fat error
+    virtual std::string speak() const = 0;
 
 public:
     void dump()const;

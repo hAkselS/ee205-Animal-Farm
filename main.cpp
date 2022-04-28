@@ -37,39 +37,7 @@ using namespace std;
 int main(){
     cout << "Starting " << PROGRAM_NAME << endl ;
 
-    /* ///animal class testing
-     cout << "make animalOne" << endl;
-     Animal animalOne ( 42.01, "cattus", "fattus" );
-     ///test getters
-     cout << animalOne.getKingdom() << endl;
-     cout << animalOne.getClassification() << endl;
-     cout << animalOne.getSpecies() << endl;
-     animalOne.validate();
-     animalOne.dump(); /
-     cout << endl;
-
-     cout << "make animalTwo" << endl;
-     Animal animalTwo ( Gender::MALE, 10, 12, "doggus", "loggus");
-     animalTwo.dump();
-     cout << endl;
-     */
-
-     cout << "make animalThree" << endl;
-     Animal animalThree ( Gender::FEMALE, 13, 14, "chungus", "bungus");
-    animalThree.validate();
-     animalThree.dump(); //@todo, out of 14 pounds is far right
-
-     cout << "make mammalOne" << endl;
-     Mammal mammalOne ( 21.4, "chad" );
-
-
-     cout << "make mammalTwo" << endl;
-     Mammal mammalTwo ( Color::RED, Gender::MALE, 96.9, 100, "lad" );
-     mammalTwo.validate();
-
-     cout << "dump the mammals" << endl;
-     mammalOne.dump();
-     mammalTwo.dump();
+     //NOW THAT MAMMAL AND ANIMAL HAVE AN ABSTRACT METHOD THEY CAN NO LONGER BE INSTANTIATED
 
      cout << "create some cats" << endl;
      Cat catOne ( "chilibean");
@@ -78,6 +46,7 @@ int main(){
      cout << "dump the cats" << endl;
      catOne.dump();
      catTwo.dump();
+     cout << catOne.speak() << endl;
 
      SinglyLinkedList catDB ;
 
@@ -91,10 +60,9 @@ int main(){
     printf(" ( | | )\n");
     printf("(__d b__)\n");
 
-    cout << "Finished with " << PROGRAM_NAME << endl;
+    cout << "Done with " << PROGRAM_NAME << endl;
 
 }
-///how do assert something or make a test that doesn't output its result???
-//@todo figure out how to print the enum classes
+
 
 

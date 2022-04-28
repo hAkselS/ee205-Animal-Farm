@@ -22,7 +22,7 @@
 using namespace std;
 
 const string Cat::SPECIES_NAME = "Felus Catus";
-const t_weight Cat::MAX_WEIGHT = 25;
+const t_weight Cat::MAX_WEIGHT = 40; //now that's a fat cat
 
 
             ///getters and setter
@@ -54,6 +54,10 @@ void Cat::dump() const noexcept {
     Mammal::dump();
     FORMAT_LINE_FOR_DUMP( "Cat", "name") << getCatName() << std::endl;
     FORMAT_LINE_FOR_DUMP( "Cat", "is fixed") << isCatFixed << std::endl;
+}
+
+string Cat::speak() const {
+    return "meow";
 }
 
 
