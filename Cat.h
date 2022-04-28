@@ -15,14 +15,26 @@
 
 class Cat : public Mammal {
 public:
-    const std::string SPECIES_NAME = "Felus Catus";
-    const t_weight MAX_WEIGHT = 25;
+    static const std::string      SPECIES_NAME;
+    static const t_weight MAX_WEIGHT;
 
-protected:     ///public member variables
+protected:     ///protected member variables
     string catName;
     bool isCatFixed;
 
-    ///heres where I am, @todo write cat construtors
+public:       ///constructors
+    Cat( const string newName) : Mammal( MAX_WEIGHT, SPECIES_NAME ){
+        assert( !newName.empty() );
+        catName = newName;
+        isCatFixed = false;
+    };
+
+    Cat( const string newName, const Color newColor, bool stateOfFix, Gender newGender, const t_weight newWeight)
+            : Mammal( newColor, newGender, newWeight, MAX_WEIGHT, SPECIES_NAME ) {
+        assert( !newName.empty() );
+        catName = newName;
+        isCatFixed = stateOfFix;
+    };
 
 
 };

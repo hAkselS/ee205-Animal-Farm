@@ -71,6 +71,10 @@ int main(){
      mammalOne.dump();
      mammalTwo.dump();
 
+     cout << "create some cats" << endl;
+     Cat catOne ( "chilibean");
+     //Cat catTwo ( )
+
      SinglyLinkedList catDB ;
 
 

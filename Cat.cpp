@@ -21,7 +21,8 @@
 
 using namespace std;
 
-
+const string Cat::SPECIES_NAME = "Felus Catus";
+const t_weight Cat::MAX_WEIGHT = 25;
 
 
 
