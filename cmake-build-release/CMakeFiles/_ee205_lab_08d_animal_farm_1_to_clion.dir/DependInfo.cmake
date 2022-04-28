@@ -13,7 +13,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/tmp/tmp.OXzw5ZwGmP/List.cpp" "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/List.cpp.o" "gcc" "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/List.cpp.o.d"
   "/tmp/tmp.OXzw5ZwGmP/Mammal.cpp" "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Mammal.cpp.o" "gcc" "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Mammal.cpp.o.d"
   "/tmp/tmp.OXzw5ZwGmP/Node.cpp" "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Node.cpp.o" "gcc" "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Node.cpp.o.d"
-  "/tmp/tmp.OXzw5ZwGmP/SingleLinkedList.cpp" "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/SingleLinkedList.cpp.o" "gcc" "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/SingleLinkedList.cpp.o.d"
   "/tmp/tmp.OXzw5ZwGmP/SinglyLinkedList.cpp" "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/SinglyLinkedList.cpp.o" "gcc" "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/SinglyLinkedList.cpp.o.d"
   "/tmp/tmp.OXzw5ZwGmP/Weight.cpp" "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Weight.cpp.o" "gcc" "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Weight.cpp.o.d"
   "/tmp/tmp.OXzw5ZwGmP/main.cpp" "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/main.cpp.o" "gcc" "CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/main.cpp.o.d"

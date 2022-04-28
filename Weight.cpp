@@ -323,20 +323,7 @@ bool Weight::isWeightValid(const float inputWeight) const noexcept {
 }
 
 ///OPERATORS
-///put to operator
-std::ostream& operator<<( std::ostream& lhs_stream
-        ,const Weight::UnitOfMeasure rhs_UnitOfMeasure ) {
-    switch (rhs_UnitOfMeasure) {
-        case Weight::POUND:
-            return lhs_stream << Weight::POUND_LABEL;
-        case Weight::KILO:
-            return lhs_stream << Weight::KILO_LABEL;
-        case Weight::SLUG:
-            return lhs_stream << Weight::SLUG_LABEL;
-        default:
-            throw std::out_of_range("The unit can’t be mapped to a string");
-    }
-}
+
 
 bool Weight::operator==(const Weight &rhs_Weight) const {
     float lhs_weight = (bIsKnown) ? this->getWeight(Weight::POUND) : 0;

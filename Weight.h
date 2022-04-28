@@ -94,6 +94,18 @@ public:     ///validation
 };
 
 ///put to operator
-extern std::ostream& operator<<( std::ostream& lhs_stream
-        ,const Weight::UnitOfMeasure rhs_UnitOfMeasure ) ;
+//for best results, write the operator override in the header file
+inline std::ostream& operator<<( std::ostream& lhs_stream
+        ,const Weight::UnitOfMeasure rhs_UnitOfMeasure ) {
+    switch (rhs_UnitOfMeasure) {
+        case Weight::POUND:
+            return lhs_stream << Weight::POUND_LABEL;
+        case Weight::KILO:
+            return lhs_stream << Weight::KILO_LABEL;
+        case Weight::SLUG:
+            return lhs_stream << Weight::SLUG_LABEL;
+        default:
+            throw std::out_of_range("The unit can’t be mapped to a string");
+    }
+}
 

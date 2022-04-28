@@ -36,25 +36,26 @@ using namespace std;
 int main(){
     cout << "Starting " << PROGRAM_NAME << endl ;
 
-   /* ///animal class testing
-    cout << "make animalOne" << endl;
-    Animal animalOne ( 42.01, "cattus", "fattus" );
-    ///test getters
-    cout << animalOne.getKingdom() << endl;
-    cout << animalOne.getClassification() << endl;
-    cout << animalOne.getSpecies() << endl;
-    animalOne.validateAnimal();
-    animalOne.dump(); /
-    cout << endl;
+    /* ///animal class testing
+     cout << "make animalOne" << endl;
+     Animal animalOne ( 42.01, "cattus", "fattus" );
+     ///test getters
+     cout << animalOne.getKingdom() << endl;
+     cout << animalOne.getClassification() << endl;
+     cout << animalOne.getSpecies() << endl;
+     animalOne.validateAnimal();
+     animalOne.dump(); /
+     cout << endl;
 
-    cout << "make animalTwo" << endl;
-    Animal animalTwo ( Gender::MALE, 10, 12, "doggus", "loggus");
-    animalTwo.dump();
-    cout << endl;
+     cout << "make animalTwo" << endl;
+     Animal animalTwo ( Gender::MALE, 10, 12, "doggus", "loggus");
+     animalTwo.dump();
+     cout << endl;
+     */
 
-    cout << "make animalThree" << endl;
-    Animal animalThree ( Gender::FEMALE, 13, 14, "chungus", "bungus");
-    animalThree.dump();*/
+     cout << "make animalThree" << endl;
+     Animal animalThree ( Gender::FEMALE, 13, 14, "chungus", "bungus");
+     animalThree.dump(); //@todo, out of 14 pounds is far right
 
 
 

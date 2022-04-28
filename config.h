@@ -26,7 +26,7 @@ typedef int NumCats;
 //declare enums
 enum class          Gender {UNKNOWN_GENDER, FEMALE, MALE};
 enum class          Breed  {UNKNOWN_BREED, MAINE_COON, MANX, SHORTHAIR, PERSIAN, SPHYNX};
-enum class          Color  {BLACK, WHITE, RED, BLUE, GREEN, PINK};
+
 
 
 

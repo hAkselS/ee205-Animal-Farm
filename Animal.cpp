@@ -65,7 +65,7 @@ void Animal::dump() const {
     FORMAT_LINE_FOR_DUMP( "Animal", "kingdom" )        << getKingdom()                 << endl;
     FORMAT_LINE_FOR_DUMP( "Animal", "classification" )        << getClassification()                 << endl;
     FORMAT_LINE_FOR_DUMP( "Animal", "species" )        << getSpecies()                 << endl; //@todo, ask mark about this
-    // FORMAT_LINE_FOR_DUMP( "Animal", "gender" )        << getGender() /*gender doesnt work either*/                 << endl;
+    FORMAT_LINE_FOR_DUMP( "Animal", "gender" )        << getGender()                << endl;
     FORMAT_LINE_FOR_DUMP( "Animal", "weight" )    << weightClass.getWeight()  << " out of " << weightClass.getMaxWeight() << " " << weightClass.getUnits() << endl;
 
 }
@@ -101,21 +101,5 @@ bool Animal::validateAnimal() const {
 ///                   `rhs` stands for Right Hand Side and means the right
 ///                   side of the `<<` operator.
 /// @return `Unknown gender`, `Female` or `Male`.
-inline std::ostream& operator<<( std::ostream& lhs_stream, const Gender& rhs_Gender ) {
-    switch (rhs_Gender) {
-        case Gender::UNKNOWN_GENDER:
-            lhs_stream << "Unknown gender";
-            break;
-        case Gender::MALE:
-            lhs_stream << "Male";
-            break;
-        case Gender::FEMALE:
-            lhs_stream << "Female";
-            break;
-        default:
 
-            throw std::out_of_range(PROGRAM_NAME ": Gender not mapped to a string");
-    }
-    return lhs_stream;
-}
 

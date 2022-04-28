@@ -249,30 +249,6 @@ Node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/Node.cpp.s
 .PHONY : Node.cpp.s
 
-SingleLinkedList.o: SingleLinkedList.cpp.o
-.PHONY : SingleLinkedList.o
-
-# target to build an object file
-SingleLinkedList.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/SingleLinkedList.cpp.o
-.PHONY : SingleLinkedList.cpp.o
-
-SingleLinkedList.i: SingleLinkedList.cpp.i
-.PHONY : SingleLinkedList.i
-
-# target to preprocess a source file
-SingleLinkedList.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/SingleLinkedList.cpp.i
-.PHONY : SingleLinkedList.cpp.i
-
-SingleLinkedList.s: SingleLinkedList.cpp.s
-.PHONY : SingleLinkedList.s
-
-# target to generate assembly for a file
-SingleLinkedList.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/build.make CMakeFiles/_ee205_lab_08d_animal_farm_1_to_clion.dir/SingleLinkedList.cpp.s
-.PHONY : SingleLinkedList.cpp.s
-
 SinglyLinkedList.o: SinglyLinkedList.cpp.o
 .PHONY : SinglyLinkedList.o
 
@@ -369,9 +345,6 @@ help:
 	@echo "... Node.o"
 	@echo "... Node.i"
 	@echo "... Node.s"
-	@echo "... SingleLinkedList.o"
-	@echo "... SingleLinkedList.i"
-	@echo "... SingleLinkedList.s"
 	@echo "... SinglyLinkedList.o"
 	@echo "... SinglyLinkedList.i"
 	@echo "... SinglyLinkedList.s"
