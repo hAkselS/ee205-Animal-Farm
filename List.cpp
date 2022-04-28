@@ -13,7 +13,7 @@
 
 
         ///check if list is empty
-bool List::empty() const {
+bool List::isEmpty() const {
     if ( headPtr == nullptr ){
         return true;
     }
@@ -22,6 +22,21 @@ bool List::empty() const {
 
 unsigned int List::size() const {
     return count;
+}
+
+bool List::isIn(Node *theNode) const {
+    if( theNode == nullptr ){
+        std::cout << PROGRAM_NAME << ": isIn: cannot search for null pointer" << std::endl;
+        return false;
+    }
+    Node* currentNode = headPtr;
+    while( currentNode->next != nullptr ){
+        if ( currentNode == theNode ){
+            return true;
+        }
+        currentNode = currentNode->next;
+    }
+    return false;
 }
 
 

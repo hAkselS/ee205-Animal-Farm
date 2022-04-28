@@ -14,24 +14,24 @@
 
 class List {
 protected:
+    ///MEMBER VARIABLES
     Node* headPtr = nullptr;
     unsigned int count = 0;
 
-    ///methods (public?)
+
     ///METHODS
-    bool empty() const;
+    bool isEmpty() const;
     unsigned int size() const;
     bool isIn( Node* theNode ) const;
 
     bool isSorted() const;
-    Node* get_first() const noexcept ;
-    ///get_first(),
-    ///get_next(),
-    ///deleteAllNodes(), calls pop front
-    ///dump()
-    ///validate()
+    Node* get_first() const noexcept;
+    void deleteAllNodes();
 
-
+    ///VIRTUAL FUNCTIONS
+    virtual Node* pop_front() noexcept = 0;
+    virtual void dump() const noexcept = 0;
+    virtual bool validate() const noexcept = 0;
 
 };
 
